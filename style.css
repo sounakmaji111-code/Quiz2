@@ -1,0 +1,131 @@
+/* ==========================================================================
+   BASE RESET & TYPOGRAPHY
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* ==========================================================================
+   UTILITY & LAYOUT
+   ========================================================================== */
+.hidden {
+    display: none !important;
+}
+
+.view-container {
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* ==========================================================================
+   BUTTONS (LEVEL SELECT)
+   ========================================================================== */
+.level-selection-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.level-btn {
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.level-btn:active { transform: scale(0.95); }
+
+.kids { background-color: #4CAF50; }
+.hs { background-color: #2196F3; }
+.adv { background-color: #F44336; }
+
+/* ==========================================================================
+   GAMEPLAY UI (OPTIONS & HUD)
+   ========================================================================== */
+.hud {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: #F44336;
+}
+
+.question {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.options-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.option-btn {
+    padding: 1rem;
+    border: 2px solid #e0e0e0;
+    background: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.option-btn:hover { background: #f9f9f9; }
+
+/* Dynamic Validation Classes injected by JavaScript */
+.option-btn.correct {
+    background: #4CAF50 !important;
+    color: white;
+    border-color: #4CAF50;
+}
+
+.option-btn.wrong {
+    background: #F44336 !important;
+    color: white;
+    border-color: #F44336;
+}
+
+/* ==========================================================================
+   SCOREBOARD
+   ========================================================================== */
+.score-box {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #9c27b0;
+    margin: 1.5rem 0;
+}
+
+.restart-btn {
+    padding: 1rem 2rem;
+    background: #9c27b0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
