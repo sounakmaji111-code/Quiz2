@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomy Adventure | Anatomica</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="view-welcome" class="view-container">
+        <h1>Anatomy Adventure!</h1>
+        <p>Select your challenge level to begin.</p>
+        
+        <div class="level-selection-box">
+            <button id="btn-level-kids" class="level-btn kids">Kids (Beginner)</button>
+            <button id="btn-level-hs" class="level-btn hs">High School (Intermediate)</button>
+            <button id="btn-level-adv" class="level-btn adv">College (Advanced)</button>
+        </div>
+    </section>
+
+    <section id="view-assessment" class="view-container hidden">
+        <div class="hud">
+            <span class="timer">Time: <span id="timer-display">20</span>s</span>
+        </div>
+        
+        <h2 id="question-text" class="question">Loading Question...</h2>
+        
+        <div id="options-container" class="options-grid">
+            </div>
+    </section>
+
+    <section id="view-analytics" class="view-container hidden">
+        <h1>Adventure Complete!</h1>
+        <p>Your Final Score:</p>
+        <div class="score-box">
+            <span id="final-score">0</span>
+        </div>
+        <button id="btn-restart" class="restart-btn">Play Again</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
