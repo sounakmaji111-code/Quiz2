@@ -848,8 +848,541 @@ const QUESTION_BANK = {
     },
 ],
     highschool: [
-        // -- filled in later parts --
-    ],
+    /* ---- SKELETAL SYSTEM (15) ---- */
+    {
+        system: "Skeletal System",
+        stem: "What type of bone tissue has a spongy, lattice-like structure found inside large bones?",
+        options: ["Compact bone", "Cartilage", "Cancellous (spongy) bone", "Periosteum"],
+        k: 1,
+        rationale: "Cancellous (spongy) bone has a honeycomb-like structure that makes bones lightweight yet strong. The spaces within it are filled with red bone marrow that produces blood cells."
+    },
+    {
+        system: "Skeletal System",
+        stem: "What is the periosteum?",
+        options: ["The inner cavity of a bone", "A tough fibrous membrane covering the outer surface of bones", "The cartilage at bone ends", "The marrow inside bones"],
+        k: 0,
+        rationale: "The periosteum is a dense membrane that wraps around the outside of bones. It contains blood vessels, nerves, and bone-forming cells called osteoblasts that are vital for growth and repair."
+    },
+    {
+        system: "Skeletal System",
+        stem: "Which type of joint allows rotation only, such as turning your head from side to side?",
+        options: ["Ball-and-socket joint", "Hinge joint", "Pivot joint", "Saddle joint"],
+        k: 1,
+        rationale: "A pivot joint allows one bone to rotate around another. The joint between the first two cervical vertebrae (atlas and axis) is a classic example, letting you shake your head 'no'."
+    },
+    {
+        system: "Skeletal System",
+        stem: "What is ossification?",
+        options: ["The process of bone fracturing", "The process by which cartilage is gradually replaced by bone tissue", "The removal of calcium from bones", "The surgical repair of broken bones"],
+        k: 0,
+        rationale: "Ossification is how bones form and grow. Most of the skeleton starts as cartilage in a developing embryo, which is then slowly replaced by hard bone tissue through this process."
+    },
+    {
+        system: "Skeletal System",
+        stem: "Which cells are responsible for building and depositing new bone tissue?",
+        options: ["Osteoclasts", "Osteoblasts", "Chondrocytes", "Osteocytes"],
+        k: 0,
+        rationale: "Osteoblasts are bone-building cells that secrete collagen and minerals to form new bone matrix. Once surrounded by matrix they become osteocytes, which maintain the existing bone."
+    },
+    {
+        system: "Skeletal System",
+        stem: "Which cells break down old bone tissue to allow continuous bone remodelling?",
+        options: ["Osteoblasts", "Chondrocytes", "Osteoclasts", "Fibroblasts"],
+        k: 1,
+        rationale: "Osteoclasts are large cells that dissolve bone mineral and matrix. They work alongside osteoblasts in a constant cycle of resorption and deposition that keeps bones healthy and responsive."
+    },
+    {
+        system: "Skeletal System",
+        stem: "Which vitamin acts like a hormone to regulate calcium absorption and is critical for bone health?",
+        options: ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin K"],
+        k: 1,
+        rationale: "Vitamin D is converted in the body into a hormone that promotes calcium absorption from the gut and its incorporation into bone. Deficiency in children causes rickets — soft, bowed bones."
+    },
+    {
+        system: "Skeletal System",
+        stem: "The vertebral column is divided into how many named regions?",
+        options: ["Three", "Four", "Five", "Seven"],
+        k: 1,
+        rationale: "The spine has five regions: cervical (neck, 7 vertebrae), thoracic (mid-back, 12), lumbar (lower back, 5), sacral (fused, 5), and coccygeal (tailbone, 3-5 fused bones)."
+    },
+    {
+        system: "Skeletal System",
+        stem: "What is the correct anatomical term for freely movable joints such as the knee and shoulder?",
+        options: ["Synarthroses", "Amphiarthroses", "Diarthroses", "Gomphoses"],
+        k: 1,
+        rationale: "Diarthroses (synovial joints) are freely movable joints lubricated by synovial fluid. Synarthroses are fixed joints like skull sutures, and amphiarthroses allow limited movement like the pubic symphysis."
+    },
+    {
+        system: "Skeletal System",
+        stem: "In adults, where is red bone marrow primarily found?",
+        options: ["Inside the shaft of long bones", "In flat bones and the ends of long bones", "Only within the femur", "Exclusively within cartilage"],
+        k: 0,
+        rationale: "In adults, active red marrow producing blood cells is found mainly in flat bones like the sternum, pelvis, ribs, and skull, plus the epiphyses (ends) of some long bones."
+    },
+    {
+        system: "Skeletal System",
+        stem: "What tissue makes up the epiphyseal (growth) plate in developing bones?",
+        options: ["Compact bone", "Hyaline cartilage", "Fibrocartilage", "Elastic cartilage"],
+        k: 0,
+        rationale: "Growth plates are made of hyaline cartilage. New cartilage cells are produced on one side while cartilage on the other side is replaced by bone, causing bones to lengthen during childhood."
+    },
+    {
+        system: "Skeletal System",
+        stem: "Which vitamin deficiency causes softening and weakening of bones in children, leading to bowed legs?",
+        options: ["Vitamin A", "Vitamin C", "Vitamin K", "Vitamin D"],
+        k: 2,
+        rationale: "Rickets is caused by Vitamin D deficiency. Without enough Vitamin D, the intestines cannot absorb sufficient calcium, so bones fail to mineralise properly and become soft and deformed."
+    },
+    {
+        system: "Skeletal System",
+        stem: "The thoracic cage is formed by the ribs, thoracic vertebrae, and which other structure?",
+        options: ["Clavicle", "Scapula", "Sternum", "Humerus"],
+        k: 1,
+        rationale: "The sternum (breastbone) forms the front wall of the thoracic cage. The ribs attach to it at the front and to the thoracic vertebrae at the back, forming a protective barrel around the heart and lungs."
+    },
+    {
+        system: "Skeletal System",
+        stem: "What type of cartilage makes up the intervertebral discs between vertebrae?",
+        options: ["Hyaline cartilage", "Elastic cartilage", "Fibrocartilage", "Calcified cartilage"],
+        k: 1,
+        rationale: "Fibrocartilage is tough and highly resistant to compression, making it ideal for intervertebral discs that absorb the enormous forces placed on the spine during daily movement."
+    },
+    {
+        system: "Skeletal System",
+        stem: "How many pairs of ribs does the human body have in total?",
+        options: ["10 pairs", "11 pairs", "12 pairs", "14 pairs"],
+        k: 1,
+        rationale: "Humans have 12 pairs of ribs. The top 7 pairs are 'true ribs' attached directly to the sternum. Pairs 8-10 are 'false ribs' and pairs 11-12 are 'floating ribs' with no front attachment."
+    },
+
+    /* ---- MUSCULAR SYSTEM (15) ---- */
+    {
+        system: "Muscular System",
+        stem: "What is the basic functional contractile unit of a skeletal muscle fibre?",
+        options: ["Myofibril", "Sarcomere", "Actin filament", "Motor unit"],
+        k: 0,
+        rationale: "The sarcomere is the fundamental unit of muscle contraction. It runs from one Z-line to the next and contains overlapping thick (myosin) and thin (actin) filaments that slide past each other during contraction."
+    },
+    {
+        system: "Muscular System",
+        stem: "According to the sliding filament theory, which two proteins interact to produce muscle contraction?",
+        options: ["Collagen and elastin", "Myosin and actin", "Keratin and fibrin", "Tropomyosin and titin"],
+        k: 0,
+        rationale: "Myosin heads (thick filaments) repeatedly attach to actin (thin filaments), pivot, and pull them inward. This shortens the sarcomere and creates the pulling force of muscle contraction."
+    },
+    {
+        system: "Muscular System",
+        stem: "Which ion is released from the sarcoplasmic reticulum to trigger muscle contraction?",
+        options: ["Sodium (Na+)", "Potassium (K+)", "Calcium (Ca2+)", "Magnesium (Mg2+)"],
+        k: 1,
+        rationale: "When a nerve impulse arrives, calcium floods out of the sarcoplasmic reticulum. It binds to troponin on the actin filament, which moves tropomyosin aside and exposes binding sites for myosin heads."
+    },
+    {
+        system: "Muscular System",
+        stem: "What is a motor unit?",
+        options: ["A single muscle fibre", "A motor neuron and all the muscle fibres it controls", "The sarcomere within a myofibril", "The neuromuscular junction alone"],
+        k: 0,
+        rationale: "When one motor neuron fires, all the muscle fibres it connects to contract simultaneously — this is the motor unit. Precise movements use small motor units; powerful movements recruit large ones."
+    },
+    {
+        system: "Muscular System",
+        stem: "What primarily causes muscle fatigue during intense exercise?",
+        options: ["Complete oxygen depletion in the blood", "Depletion of ATP and accumulation of metabolic byproducts", "Muscle fibres dying permanently", "Tendons stretching beyond their limit"],
+        k: 0,
+        rationale: "Fatigue results from reduced ATP availability, accumulation of inorganic phosphate, hydrogen ions (lowering pH), and other metabolic waste products that interfere with the contractile mechanism."
+    },
+    {
+        system: "Muscular System",
+        stem: "Which type of contraction occurs when a muscle generates tension but does not change in length?",
+        options: ["Isotonic concentric", "Isotonic eccentric", "Isometric", "Isokinetic"],
+        k: 1,
+        rationale: "An isometric contraction produces force without joint movement — like pushing against a wall. Isotonic contractions involve movement: concentric shortens the muscle, eccentric lengthens it under load."
+    },
+    {
+        system: "Muscular System",
+        stem: "What is the neuromuscular junction?",
+        options: ["The point where two muscles attach to each other", "The site where a motor neuron communicates with a muscle fibre", "The tendon insertion point on bone", "The Z-line boundary of a sarcomere"],
+        k: 0,
+        rationale: "The neuromuscular junction is a specialised synapse between a motor neuron terminal and a muscle fibre. Neurotransmitters released here trigger the electrical signal that starts contraction."
+    },
+    {
+        system: "Muscular System",
+        stem: "Which neurotransmitter is released at the neuromuscular junction to initiate muscle contraction?",
+        options: ["Dopamine", "Serotonin", "Acetylcholine", "Norepinephrine"],
+        k: 1,
+        rationale: "Acetylcholine (ACh) is released from the motor neuron terminal into the synaptic cleft. It binds to receptors on the muscle membrane, generating an action potential that triggers contraction."
+    },
+    {
+        system: "Muscular System",
+        stem: "What is DOMS (Delayed Onset Muscle Soreness)?",
+        options: ["A chronic muscle wasting disease", "Pain and stiffness felt 24-72 hours after unfamiliar exercise due to microscopic muscle damage and inflammation", "Immediate cramping experienced during peak exercise", "Permanent muscle inflammation requiring medical treatment"],
+        k: 0,
+        rationale: "DOMS is caused by microscopic tears in muscle fibres and connective tissue following eccentric exercise or unaccustomed training. The resulting inflammation and repair process causes the familiar ache."
+    },
+    {
+        system: "Muscular System",
+        stem: "Slow-twitch (Type I) muscle fibres are best suited for which type of activity?",
+        options: ["Explosive short-distance sprinting", "Heavy one-rep maximum weightlifting", "Long-duration endurance activities like marathon running", "Quick reflex-based actions"],
+        k: 1,
+        rationale: "Type I fibres are rich in mitochondria and myoglobin, have excellent blood supply, and are highly fatigue-resistant. They rely on aerobic metabolism, making them perfect for sustained endurance activities."
+    },
+    {
+        system: "Muscular System",
+        stem: "Fast-twitch (Type II) muscle fibres are primarily characterised by which feature?",
+        options: ["High endurance and extreme fatigue resistance", "Slow contraction speed suitable for posture", "High myoglobin content giving them a red colour", "Rapid, powerful contractions with relatively quick fatigability"],
+        k: 2,
+        rationale: "Type II fibres contract quickly and powerfully using anaerobic glycolysis for rapid ATP production. However, they fatigue quickly because they generate lactic acid and have fewer mitochondria."
+    },
+    {
+        system: "Muscular System",
+        stem: "What is the 'origin' of a skeletal muscle?",
+        options: ["The attachment point on the bone that moves", "The stationary attachment point on the fixed bone", "Where a muscle belly splits into two heads", "The point where muscle tissue transitions into tendon"],
+        k: 0,
+        rationale: "The origin is where a muscle attaches to the relatively fixed bone. The insertion is on the bone that moves. When the muscle contracts, the insertion moves toward the origin."
+    },
+    {
+        system: "Muscular System",
+        stem: "What is muscular hypertrophy?",
+        options: ["Muscle wasting due to prolonged inactivity", "An increase in the cross-sectional size of individual muscle fibres from resistance training", "The development of entirely new muscle fibres", "Chronic muscle inflammation following injury"],
+        k: 0,
+        rationale: "Hypertrophy is an increase in muscle fibre diameter. Resistance training causes micro-damage, and repair adds more myofibrils and contractile protein, making each fibre thicker and the whole muscle larger."
+    },
+    {
+        system: "Muscular System",
+        stem: "Which energy system provides immediate fuel for the first few seconds of maximal explosive effort?",
+        options: ["Aerobic oxidative system", "Anaerobic glycolytic system", "Phosphocreatine (ATP-PC) system", "Fat oxidation system"],
+        k: 1,
+        rationale: "The ATP-PC system uses stored ATP and phosphocreatine to regenerate ATP almost instantly. It powers maximum efforts like jumping or sprinting for roughly 8-10 seconds before other systems must take over."
+    },
+    {
+        system: "Muscular System",
+        stem: "What is the primary role of the sarcoplasmic reticulum in muscle cells?",
+        options: ["To produce ATP needed for contraction", "To store and release calcium ions that initiate contraction", "To synthesise structural muscle proteins", "To conduct the electrical action potential along the fibre"],
+        k: 0,
+        rationale: "The sarcoplasmic reticulum is a specialised endoplasmic reticulum that wraps around myofibrils. It stores calcium at rest and releases it upon stimulation, which is the trigger for the contraction cycle."
+    },
+
+    /* ---- HEART & LUNGS (15) ---- */
+    {
+        system: "Heart & Lungs",
+        stem: "What is cardiac output?",
+        options: ["The pressure of blood within the arteries", "The volume of blood the heart pumps out per minute", "The rate of oxygen exchange across alveoli", "The electrical activity pattern of the heart"],
+        k: 0,
+        rationale: "Cardiac output = heart rate × stroke volume. At rest it is about 5 litres per minute. During intense exercise it can rise to 20-25 litres per minute in trained athletes."
+    },
+    {
+        system: "Heart & Lungs",
+        stem: "What is the sinoatrial (SA) node?",
+        options: ["A valve preventing backflow between the atria and ventricles", "The heart's natural pacemaker that initiates each electrical heartbeat", "A blood vessel that supplies the heart muscle with oxygen", "The outermost protective layer of the heart wall"],
+        k: 0,
+        rationale: "The SA node is a cluster of specialised cells in the right atrium that spontaneously generates electrical impulses about 60-100 times per minute, setting the heart's natural rhythm."
+    },
+    {
+        system: "Heart & Lungs",
+        stem: "Which blood vessels supply the heart muscle itself with oxygenated blood?",
+        options: ["Pulmonary arteries", "Aortic arch branches", "Coronary arteries", "Jugular veins"],
+        k: 1,
+        rationale: "The coronary arteries branch from the base of the aorta and supply the heart muscle (myocardium). Blockage of these arteries causes a heart attack (myocardial infarction)."
+    },
+    {
+        system: "Heart & Lungs",
+        stem: "What does systolic blood pressure measure?",
+        options: ["The arterial pressure when the heart muscle is relaxed", "The mathematical average of systolic and diastolic pressures", "The arterial pressure generated when the heart contracts and ejects blood", "The pressure within the pulmonary circulation"],
+        k: 1,
+        rationale: "Systolic pressure is the peak arterial pressure reached during ventricular contraction. Diastolic is the lower pressure during relaxation. A normal reading is around 120/80 mmHg."
+    },
+    {
+        system: "Heart & Lungs",
+        stem: "What is the function of the bicuspid (mitral) valve?",
+        options: ["Prevents backflow from the aorta into the left ventricle", "Prevents backflow from the left ventricle into the left atrium", "Prevents backflow from the pulmonary artery into the right ventricle", "Prevents backflow from the right ventricle into the right atrium"],
+        k: 0,
+        rationale: "The bicuspid (mitral) valve sits between the left atrium and left ventricle. It snaps shut when the ventricle contracts, preventing oxygenated blood from flowing backwards toward the lungs."
+    },
+    {
+        system: "Heart & Lungs",
+        stem: "During gas exchange in the alveoli, oxygen moves from air into the blood by which process?",
+        options: ["Active transport requiring ATP", "Osmosis driven by water pressure", "Diffusion down a concentration gradient", "Filtration driven by blood pressure"],
+        k: 1,
+        rationale: "Oxygen diffuses passively from areas of high concentration in the alveolar air into the surrounding capillary blood where concentration is lower. No energy is required — it follows its own gradient."
+    },
+    {
+        system: "Heart & Lungs",
+        stem: "What is tidal volume?",
+        options: ["The maximum total capacity of both lungs combined", "The volume of air remaining after a maximum forced exhalation", "The volume of air inhaled or exhaled during one normal resting breath", "The maximum volume of air forcefully exhaled after a deep breath"],
+        k: 1,
+        rationale: "Tidal volume at rest is approximately 500 mL per breath. It increases significantly during exercise as the body demands more oxygen and needs to expel more carbon dioxide."
+    },
+    {
+        system: "Heart & Lungs",
+        stem: "What is the role of pulmonary surfactant?",
+        options: ["To kill bacteria that enter the airways", "To transport oxygen molecules within alveolar fluid", "To reduce surface tension inside alveoli, preventing them from collapsing", "To warm and humidify air entering the lungs"],
+        k: 1,
+        rationale: "Surfactant is produced by Type II alveolar cells. Without it, the surface tension of the water lining alveoli would cause them to collapse with each exhalation — a condition seen in premature infants."
+    },
+    {
+        system: "Heart & Lungs",
+        stem: "Adult haemoglobin is made up of how many polypeptide chains?",
+        options: ["Two", "Three", "Four", "Six"],
+        k: 1,
+        rationale: "Adult haemoglobin (HbA) consists of four polypeptide chains — two alpha and two beta. Each chain carries one haem group containing an iron atom that can bind one oxygen molecule, giving four O2 per haemoglobin."
+    },
+    {
+        system: "Heart & Lungs",
+        stem: "What is the Bohr effect?",
+        options: ["The increase in heart rate in response to aerobic exercise", "The rightward shift of the oxygen-haemoglobin dissociation curve caused by increased CO2 and lower pH", "The age-related decline in lung capacity", "The reflex control of breathing rate by CO2 chemoreceptors"],
+        k: 0,
+        rationale: "The Bohr effect means haemoglobin releases oxygen more readily in tissues with high CO2 and low pH (like active muscles). This perfectly matches oxygen delivery to where it is needed most."
+    },
+    {
+        system: "Heart & Lungs",
+        stem: "Which brain region contains the respiratory centres that automatically control breathing rhythm?",
+        options: ["Cerebral cortex", "Cerebellum", "Medulla oblongata", "Hypothalamus"],
+        k: 1,
+        rationale: "The medulla oblongata houses the dorsal and ventral respiratory groups that set the basic breathing rhythm. The pons fine-tunes it. CO2 levels in the blood are the primary driver of breathing rate."
+    },
+    {
+        system: "Heart & Lungs",
+        stem: "What is a normal resting heart rate range for a healthy adult?",
+        options: ["40-50 bpm", "60-100 bpm", "100-120 bpm", "120-140 bpm"],
+        k: 0,
+        rationale: "60-100 beats per minute is the normal resting range. Highly trained endurance athletes often have resting rates of 40-50 bpm because their stronger hearts pump more blood per beat."
+    },
+    {
+        system: "Heart & Lungs",
+        stem: "What is erythropoiesis?",
+        options: ["The destruction and recycling of old red blood cells", "The production of new red blood cells in the bone marrow", "The clotting cascade at a wound site", "The binding of oxygen to haemoglobin in the lungs"],
+        k: 0,
+        rationale: "Erythropoiesis occurs mainly in red bone marrow and is stimulated by the hormone erythropoietin (EPO) released by the kidneys when blood oxygen levels fall — for example at high altitude."
+    },
+    {
+        system: "Heart & Lungs",
+        stem: "What structure separates the left and right sides of the heart?",
+        options: ["The pericardium", "The pleura", "The septum", "The myocardium"],
+        k: 1,
+        rationale: "The septum is a thick muscular wall dividing the heart into right and left halves. This separation ensures oxygenated and deoxygenated blood never mix during normal circulation."
+    },
+    {
+        system: "Heart & Lungs",
+        stem: "What is the name of the large vein that returns deoxygenated blood from the lower body to the right atrium?",
+        options: ["Superior vena cava", "Pulmonary vein", "Inferior vena cava", "Coronary sinus"],
+        k: 1,
+        rationale: "The inferior vena cava drains blood from the lower body, while the superior vena cava drains the upper body and head. Both empty into the right atrium. Pulmonary veins, unusually, carry oxygenated blood."
+    },
+
+    /* ---- DIGESTION (15) ---- */
+    {
+        system: "Digestion",
+        stem: "What is the chemical name for the acid produced by the stomach?",
+        options: ["Sulfuric acid", "Hydrochloric acid", "Citric acid", "Carbonic acid"],
+        k: 0,
+        rationale: "Gastric glands secrete hydrochloric acid (HCl), creating a stomach pH of 1.5-3.5. This denatures proteins, activates pepsinogen into pepsin, and kills most ingested bacteria."
+    },
+    {
+        system: "Digestion",
+        stem: "Which enzyme found in saliva begins the chemical digestion of carbohydrates in the mouth?",
+        options: ["Pepsin", "Lipase", "Salivary amylase", "Trypsin"],
+        k: 1,
+        rationale: "Salivary amylase begins breaking starch (polysaccharides) into smaller maltose units in the mouth. This is why starchy food like bread tastes slightly sweet if you chew it for a long time."
+    },
+    {
+        system: "Digestion",
+        stem: "Which specialised cells in the stomach lining secrete hydrochloric acid?",
+        options: ["Chief cells", "Parietal cells", "Goblet cells", "G cells"],
+        k: 0,
+        rationale: "Parietal cells (oxyntic cells) in the gastric glands secrete both HCl and intrinsic factor. Chief cells secrete pepsinogen, and G cells produce the hormone gastrin which stimulates acid secretion."
+    },
+    {
+        system: "Digestion",
+        stem: "What is the primary role of pepsin in digestion?",
+        options: ["Breaks down carbohydrates in the stomach", "Breaks down proteins into smaller peptide fragments in the stomach", "Emulsifies fat droplets in the small intestine", "Neutralises stomach acid as it enters the duodenum"],
+        k: 0,
+        rationale: "Pepsin is a protease enzyme active in the acidic environment of the stomach. It is secreted as inactive pepsinogen by chief cells and activated by HCl, preventing it from digesting the stomach itself."
+    },
+    {
+        system: "Digestion",
+        stem: "What is enterohepatic circulation?",
+        options: ["Portal blood flow from intestines to the liver", "The recycling of bile salts between the liver, bile ducts, small intestine, and back to the liver", "The arterial blood supply to the entire GI tract", "The nerve supply from the enteric nervous system to the intestines"],
+        k: 0,
+        rationale: "About 95% of bile salts secreted into the small intestine are reabsorbed in the terminal ileum and returned to the liver for reuse. This highly efficient recycling means the body needs to synthesise little new bile."
+    },
+    {
+        system: "Digestion",
+        stem: "Which hormone triggers the gallbladder to contract and release bile into the small intestine?",
+        options: ["Gastrin", "Secretin", "Cholecystokinin (CCK)", "Insulin"],
+        k: 1,
+        rationale: "CCK is released by cells in the duodenal wall in response to fat and protein. It stimulates gallbladder contraction, relaxes the sphincter of Oddi, and also triggers pancreatic enzyme secretion."
+    },
+    {
+        system: "Digestion",
+        stem: "What is the brush border of the small intestine?",
+        options: ["A protective mucus layer coating the intestinal wall", "Densely packed microvilli on enterocyte surfaces that enormously increase the absorptive surface area", "The smooth muscle layer responsible for peristaltic contractions", "A layer of mucus-secreting goblet cells lining the intestinal wall"],
+        k: 0,
+        rationale: "Each epithelial cell (enterocyte) has around 3,000 microvilli on its apical surface forming the brush border. This increases the total absorptive surface of the small intestine to approximately the size of a tennis court."
+    },
+    {
+        system: "Digestion",
+        stem: "Where are fat-soluble vitamins (A, D, E, K) primarily absorbed in the digestive tract?",
+        options: ["In the stomach with gastric acid", "In the large intestine by bacterial action", "In the small intestine with the aid of bile salts and micelles", "In the mouth through the buccal mucosa"],
+        k: 1,
+        rationale: "Fat-soluble vitamins are packaged into micelles (tiny fat-bile complexes) in the small intestine and absorbed through the intestinal wall into lymphatic vessels (lacteals) rather than directly into blood."
+    },
+    {
+        system: "Digestion",
+        stem: "What is the function of the ileocecal valve?",
+        options: ["Controls the rate of chyme release from the stomach into the duodenum", "Prevents backflow of large intestine contents into the small intestine", "Regulates the release of bile into the duodenum", "Separates the jejunum from the ileum"],
+        k: 0,
+        rationale: "The ileocecal valve sits at the junction of the small and large intestines. It acts as a one-way gate preventing bacteria-rich colonic contents from contaminating the small intestine."
+    },
+    {
+        system: "Digestion",
+        stem: "Which macronutrient begins chemical digestion first — in the mouth?",
+        options: ["Proteins", "Fats", "Carbohydrates", "Vitamins and minerals"],
+        k: 1,
+        rationale: "Salivary amylase immediately begins breaking down starch molecules as soon as food enters the mouth. Protein digestion starts in the stomach, and fat digestion mainly occurs in the small intestine."
+    },
+    {
+        system: "Digestion",
+        stem: "What is the hepatic portal system?",
+        options: ["The bile duct network draining from liver to intestine", "The network of veins carrying nutrient-rich blood from the intestines directly to the liver for processing", "The arterial supply bringing oxygenated blood to the liver", "The lymphatic vessels draining absorbed fats from the gut"],
+        k: 0,
+        rationale: "After absorption, nutrients pass into the hepatic portal vein and travel to the liver first. The liver can store, transform, detoxify, or redistribute them before they reach general circulation."
+    },
+    {
+        system: "Digestion",
+        stem: "What causes acid reflux (heartburn)?",
+        options: ["Excess bile flooding back into the stomach", "Gastric acid rising into the oesophagus due to a weakened lower oesophageal sphincter", "Spasm of the pyloric sphincter trapping acid", "Bacterial infection of the stomach lining"],
+        k: 0,
+        rationale: "The lower oesophageal sphincter normally prevents stomach contents from rising. When it is weak or relaxes inappropriately, acidic chyme enters the oesophagus, causing the burning sensation of heartburn."
+    },
+    {
+        system: "Digestion",
+        stem: "What is the primary site of dietary iron absorption in the gastrointestinal tract?",
+        options: ["Stomach", "Duodenum and upper jejunum", "Ileum", "Large intestine"],
+        k: 0,
+        rationale: "Iron is mainly absorbed in the duodenum and proximal jejunum. Vitamin C enhances absorption by keeping iron in its more absorbable ferrous (Fe2+) form. Deficiency causes iron-deficiency anaemia."
+    },
+    {
+        system: "Digestion",
+        stem: "Which intestinal cells are primarily responsible for absorbing digested nutrients?",
+        options: ["Goblet cells", "Enterocytes", "Paneth cells", "Enteroendocrine cells"],
+        k: 0,
+        rationale: "Enterocytes are the absorptive epithelial cells lining the small intestinal villi. They transport amino acids, monosaccharides, fatty acids, vitamins, and minerals into blood or lymph."
+    },
+    {
+        system: "Digestion",
+        stem: "What is the role of intrinsic factor, produced by parietal cells of the stomach?",
+        options: ["It converts pepsinogen into active pepsin", "It neutralises acid as it enters the duodenum", "It is essential for the absorption of vitamin B12 in the terminal ileum", "It stimulates bile production in the liver"],
+        k: 1,
+        rationale: "Intrinsic factor is a glycoprotein that binds vitamin B12 (cobalamin) in the stomach and escorts it to the terminal ileum where it can be absorbed. Without intrinsic factor, B12 deficiency and pernicious anaemia result."
+    },
+
+    /* ---- BRAIN & SENSES (15) ---- */
+    {
+        system: "Brain & Senses",
+        stem: "What are the three protective membranes that enclose the brain and spinal cord collectively called?",
+        options: ["Pleura", "Peritoneum", "Meninges", "Pericardium"],
+        k: 1,
+        rationale: "The three meningeal layers from outside to inside are: dura mater (tough), arachnoid mater (web-like), and pia mater (thin, directly touching the brain). Meningitis is inflammation of these membranes."
+    },
+    {
+        system: "Brain & Senses",
+        stem: "What is the primary function of the myelin sheath surrounding nerve axons?",
+        options: ["To supply glucose and nutrients directly to the nerve cell body", "To link adjacent neurons across synaptic gaps", "To electrically insulate the axon and dramatically speed up nerve impulse conduction", "To produce and store neurotransmitters for release"],
+        k: 1,
+        rationale: "Myelin allows saltatory conduction — the impulse leaps between gaps in myelin (nodes of Ranvier) rather than travelling continuously. This increases conduction speed from about 1 m/s to up to 120 m/s."
+    },
+    {
+        system: "Brain & Senses",
+        stem: "What is the typical resting membrane potential of a neuron?",
+        options: ["+70 mV", "0 mV", "-70 mV", "-140 mV"],
+        k: 1,
+        rationale: "At rest, the inside of a neuron is about -70 mV relative to the outside, maintained by the sodium-potassium pump. Depolarisation to threshold (-55 mV) triggers an action potential."
+    },
+    {
+        system: "Brain & Senses",
+        stem: "What occurs during a nerve action potential?",
+        options: ["Calcium ions flow into the cell triggering neurotransmitter release at the dendrites", "Sodium ions rapidly enter the cell causing depolarisation, followed by potassium exiting to repolarise the membrane", "Dopamine is released into the synapse causing the next neuron to fire", "The myelin sheath contracts to physically squeeze the signal along"],
+        k: 0,
+        rationale: "An action potential is an all-or-nothing electrical event. Voltage-gated Na+ channels open (depolarisation), then K+ channels open (repolarisation), briefly overshooting to hyperpolarisation before returning to rest."
+    },
+    {
+        system: "Brain & Senses",
+        stem: "Which cerebral lobe is primarily responsible for processing touch sensation and spatial awareness?",
+        options: ["Frontal lobe", "Occipital lobe", "Temporal lobe", "Parietal lobe"],
+        k: 2,
+        rationale: "The parietal lobe contains the primary somatosensory cortex which maps touch, temperature, and pain from the body. It also integrates spatial information to help you know where your body parts are."
+    },
+    {
+        system: "Brain & Senses",
+        stem: "What is the primary role of the hypothalamus?",
+        options: ["Direct voluntary control of skeletal muscle movement", "Processing and relaying visual information to the cortex", "Regulating homeostasis including body temperature, hunger, thirst, and circadian rhythms", "Forming and consolidating long-term explicit memories"],
+        k: 1,
+        rationale: "The hypothalamus is the master regulator of homeostasis. It controls the autonomic nervous system and pituitary gland, coordinating responses to temperature, hydration, hunger, stress, and sleep cycles."
+    },
+    {
+        system: "Brain & Senses",
+        stem: "What is the corpus callosum?",
+        options: ["The folded outer layer of the cerebral hemispheres", "A massive band of white matter fibres connecting the left and right cerebral hemispheres", "The floor of the third and fourth brain ventricles", "The fibrous periosteum covering the exterior of the skull"],
+        k: 0,
+        rationale: "The corpus callosum is the largest white matter structure in the brain, containing about 200-250 million nerve fibres. It allows rapid communication and coordination between the two cerebral hemispheres."
+    },
+    {
+        system: "Brain & Senses",
+        stem: "Which neurotransmitter is most associated with the brain's reward, motivation, and pleasure circuits?",
+        options: ["Acetylcholine", "Serotonin", "Dopamine", "GABA"],
+        k: 1,
+        rationale: "Dopamine is released in the mesolimbic pathway (reward circuit) in response to rewarding stimuli. Disruption of dopamine signalling is implicated in addiction, Parkinson's disease, and schizophrenia."
+    },
+    {
+        system: "Brain & Senses",
+        stem: "What is the blood-brain barrier?",
+        options: ["The dura mater layer that mechanically shields the brain", "A highly selective barrier formed by specialised capillary endothelial cells that tightly regulates what enters the brain", "The cerebrospinal fluid cushion surrounding brain tissue", "The bony cranium protecting the brain from physical trauma"],
+        k: 0,
+        rationale: "The blood-brain barrier consists of tightly joined endothelial cells with no gaps. It permits oxygen, glucose, and some drugs to pass while blocking toxins, pathogens, and most large molecules from reaching neural tissue."
+    },
+    {
+        system: "Brain & Senses",
+        stem: "Which photoreceptor cells in the retina are specialised for detecting dim light and enabling night vision?",
+        options: ["Cone cells", "Rod cells", "Ganglion cells", "Bipolar cells"],
+        k: 0,
+        rationale: "Rods are extremely light-sensitive and contain rhodopsin. There are about 120 million rods concentrated in the peripheral retina. They only detect light intensity, not colour, which is why night vision is greyscale."
+    },
+    {
+        system: "Brain & Senses",
+        stem: "What is the function of the semicircular canals in the inner ear?",
+        options: ["Converting sound vibrations into nerve impulses for hearing", "Detecting rotational head movements to help maintain balance and spatial orientation", "Amplifying sound waves before they reach the cochlea", "Equalising air pressure between the inner and outer ear"],
+        k: 0,
+        rationale: "The three semicircular canals are arranged in perpendicular planes to detect rotation in any direction. Fluid movement within them bends hair cells, signalling rotational acceleration to the brain."
+    },
+    {
+        system: "Brain & Senses",
+        stem: "Which structure converts mechanical sound vibrations into electrical nerve impulses sent to the brain?",
+        options: ["Semicircular canals", "Eardrum (tympanic membrane)", "Cochlea", "Ossicles (tiny ear bones)"],
+        k: 1,
+        rationale: "The cochlea is a fluid-filled, snail-shaped structure lined with thousands of hair cells that respond to different sound frequencies. Bending of these hairs generates electrical signals sent via the auditory nerve."
+    },
+    {
+        system: "Brain & Senses",
+        stem: "What does the autonomic nervous system primarily regulate?",
+        options: ["Voluntary control of all skeletal muscles", "Conscious sensory processing in the cerebral cortex", "Involuntary body functions such as heart rate, digestion, glandular secretion, and smooth muscle activity", "Fine motor coordination and balance through the cerebellum"],
+        k: 1,
+        rationale: "The autonomic nervous system has two divisions: sympathetic (fight-or-flight) and parasympathetic (rest-and-digest). They act in opposition to regulate heart rate, breathing, digestion, and blood pressure automatically."
+    },
+    {
+        system: "Brain & Senses",
+        stem: "Which neurotransmitter is the brain's primary inhibitory signal, acting as a neural 'brake' to calm activity?",
+        options: ["Glutamate", "Acetylcholine", "Norepinephrine", "GABA (gamma-aminobutyric acid)"],
+        k: 2,
+        rationale: "GABA is the main inhibitory neurotransmitter in the brain. It hyperpolarises neurons, making them less likely to fire. Many anxiolytic drugs like benzodiazepines work by enhancing GABA's inhibitory effects."
+    },
+    {
+        system: "Brain & Senses",
+        stem: "What is neuroplasticity?",
+        options: ["The physical elasticity and flexibility of brain tissue itself", "The brain's ability to reorganise and form new neural connections in response to learning, experience, or injury throughout life", "The protective myelin coating that insulates neuron axons", "The natural process of neuronal cell death that accelerates with ageing"],
+        k: 0,
+        rationale: "Neuroplasticity underlies all learning and memory. When you practise a skill, synaptic connections strengthen (long-term potentiation). After brain injury, plasticity allows other regions to partially compensate for lost function."
+    },
+],
     advanced: [
         // -- filled in later parts --
     ]
