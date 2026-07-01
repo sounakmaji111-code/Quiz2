@@ -692,7 +692,161 @@ const QUESTION_BANK = {
     },
     {
         system: "Digestion",
-        stem: "What are the tiny finger-like bumps insid
+        stem: "What are the tiny finger-like bumps inside your small intestine that absorb nutrients?",
+        options: ["Cilia", "Villi", "Alveoli", "Pores"],
+        k: 0,
+        rationale: "Villi are millions of tiny absorbing bumps that give your intestine as much surface area as a whole tennis court — making sure nothing good goes to waste!"
+    },
+    {
+        system: "Digestion",
+        stem: "Which organ sits beside your stomach and makes insulin to control sugar levels?",
+        options: ["The liver", "The pancreas", "The gallbladder", "The spleen"],
+        k: 0,
+        rationale: "The pancreas does two big jobs! It makes digestive enzymes to break down food, and produces insulin to keep your blood sugar at a healthy level."
+    },
+    {
+        system: "Digestion",
+        stem: "About how long does it take for food to travel all the way through your digestive system?",
+        options: ["10 minutes", "1 hour", "24 to 72 hours", "One week"],
+        k: 1,
+        rationale: "Digestion is a slow journey! While food leaves your stomach after a few hours, it can take up to three whole days to complete the full trip through your intestines."
+    },
+    {
+        system: "Digestion",
+        stem: "What is the hardest substance your body makes?",
+        options: ["Bone", "Fingernail", "Tooth enamel", "Cartilage"],
+        k: 1,
+        rationale: "Tooth enamel is even harder than bone! It coats the outside of your teeth to protect them while you chew tough and crunchy foods."
+    },
+    {
+        system: "Digestion",
+        stem: "What causes the rumbling sound in your tummy when you're hungry?",
+        options: ["Your bones grinding", "Air and juices moving through empty intestines", "Your heart beating", "Your blood flowing"],
+        k: 0,
+        rationale: "When your stomach and intestines are empty, the muscles still squeeze automatically — and that makes the gurgling and rumbling sound you hear when you're hungry!"
+    },
+    {
+        system: "Digestion",
+        stem: "What do your kidneys produce to flush waste out of your body?",
+        options: ["Bile", "Saliva", "Urine (pee)", "Sweat"],
+        k: 1,
+        rationale: "Your two kidneys filter your entire blood supply about 40 times every day, removing waste and extra water to make yellow urine stored in your bladder!"
+    },
+    {
+        system: "Digestion",
+        stem: "When you burp after drinking fizzy soda, where does the burp come from?",
+        options: ["Your lungs", "Your stomach", "Your intestines", "Your throat"],
+        k: 0,
+        rationale: "Fizzy drinks are full of carbon dioxide bubbles! The bubbles collect in your stomach until the top opens up and lets them escape as a big burp!"
+    },
+
+    /* ---- BRAIN & SENSES (15) ---- */
+    {
+        system: "Brain & Senses",
+        stem: "What is the name of the amazing organ inside your head that controls everything you do?",
+        options: ["The heart", "The liver", "The brain", "The stomach"],
+        k: 1,
+        rationale: "Your brain is your body's supercomputer! It controls your thoughts, movements, feelings, and automatically runs all your vital body functions."
+    },
+    {
+        system: "Brain & Senses",
+        stem: "How many senses do humans have?",
+        options: ["Three", "Four", "Five", "Seven"],
+        k: 1,
+        rationale: "The five main senses are sight, hearing, smell, taste, and touch! Each one collects information from the world around you and sends it to your brain."
+    },
+    {
+        system: "Brain & Senses",
+        stem: "What do your eyes use to let in light?",
+        options: ["The iris", "The pupil", "The cornea", "The retina"],
+        k: 0,
+        rationale: "Your pupil is the dark circle in the middle of your eye. It's actually an opening that gets bigger in the dark to let in more light and smaller in bright sunshine!"
+    },
+    {
+        system: "Brain & Senses",
+        stem: "What is the coloured ring around your pupil called?",
+        options: ["Cornea", "Retina", "Iris", "Lens"],
+        k: 1,
+        rationale: "Your iris can be blue, green, brown, hazel, or grey — no two people have the exact same iris pattern! It controls how much light enters your eye."
+    },
+    {
+        system: "Brain & Senses",
+        stem: "Which body part do you use to hear sounds?",
+        options: ["Your nose", "Your eyes", "Your ears", "Your tongue"],
+        k: 1,
+        rationale: "Sound waves travel into your ear canal and make your eardrum vibrate. Those vibrations are turned into signals that your brain understands as sound!"
+    },
+    {
+        system: "Brain & Senses",
+        stem: "What are the tiny bumps on your tongue that detect flavours called?",
+        options: ["Villi", "Taste buds", "Papillae", "Cilia"],
+        k: 0,
+        rationale: "You have around 10,000 taste buds spread across your tongue! They can detect sweet, salty, sour, bitter, and savoury flavours."
+    },
+    {
+        system: "Brain & Senses",
+        stem: "What connects your brain to the rest of your body through your spine?",
+        options: ["Spinal cord", "Backbone", "Aorta", "Trachea"],
+        k: 3,
+        rationale: "The spinal cord is a thick bundle of nerves running through your backbone. It carries messages from your brain to your muscles and brings information back up!"
+    },
+    {
+        system: "Brain & Senses",
+        stem: "Why does food taste boring when you have a blocked nose?",
+        options: ["Your tongue stops working", "Taste and smell work together", "Your saliva dries up", "Your throat swells shut"],
+        k: 0,
+        rationale: "Most of what we call 'taste' is actually smell! When your nose is blocked, the aroma of food can't reach your smell receptors, so flavours seem dull and flat."
+    },
+    {
+        system: "Brain & Senses",
+        stem: "What part of the brain at the back of your head helps you keep your balance?",
+        options: ["Cerebrum", "Brainstem", "Cerebellum", "Amygdala"],
+        k: 1,
+        rationale: "The cerebellum fine-tunes all your movements and keeps you balanced. Without it you would wobble and stumble trying to walk in a straight line!"
+    },
+    {
+        system: "Brain & Senses",
+        stem: "Why do you blink your eyes without thinking about it?",
+        options: ["To rest your eyeballs", "To spread tears and clean your eyes", "To focus on objects", "To let in more light"],
+        k: 0,
+        rationale: "You blink about 15-20 times a minute automatically! Each blink coats your eye with a fresh layer of tears that washes away dust and keeps your vision crystal clear."
+    },
+    {
+        system: "Brain & Senses",
+        stem: "What are the tiny nerve cells in your brain called?",
+        options: ["Neurons", "Nephrons", "Platelets", "Alveoli"],
+        k: 3,
+        rationale: "You have billions of neurons in your brain! They send tiny electrical signals to each other at incredible speeds, creating every thought and feeling you have."
+    },
+    {
+        system: "Brain & Senses",
+        stem: "Which part of your brain is in charge of your feelings like happiness and fear?",
+        options: ["Cerebrum", "Brainstem", "Cerebellum", "Amygdala"],
+        k: 2,
+        rationale: "The amygdala is a tiny almond-shaped cluster deep in your brain that acts as your emotional alarm system — responsible for making you feel happy, scared, or excited!"
+    },
+    {
+        system: "Brain & Senses",
+        stem: "How fast can nerve signals travel in your body?",
+        options: ["As fast as a walking pace", "As fast as a bicycle", "As fast as a racing car", "At the speed of light"],
+        k: 1,
+        rationale: "The fastest nerve signals in your body travel at up to 270 miles per hour — faster than a racing car! That's how you react so quickly when something touches you."
+    },
+    {
+        system: "Brain & Senses",
+        stem: "What covers your entire body, protects you from germs, and keeps your insides safe?",
+        options: ["Muscles", "Fat", "Skin", "Hair"],
+        k: 1,
+        rationale: "Your skin is actually the largest organ in your whole body! It's your personal waterproof armour, keeping germs out and moisture in."
+    },
+    {
+        system: "Brain & Senses",
+        stem: "When a doctor taps your knee and your leg kicks on its own, what is that called?",
+        options: ["A habit", "A reflex", "A muscle cramp", "A nerve buzz"],
+        k: 0,
+        rationale: "A reflex is an automatic response your spinal cord sends out without waiting for your brain! It's your body's emergency fast-track system to protect you from harm."
+    },
+],
     highschool: [
         // -- filled in later parts --
     ],
