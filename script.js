@@ -1384,8 +1384,420 @@ const QUESTION_BANK = {
     },
 ],
     advanced: [
-        // -- filled in later parts --
-    ]
+    /* ---- SKELETAL SYSTEM (15) ---- */
+    {
+        system: "Skeletal System",
+        stem: "Which signalling pathway primarily regulates osteoblast differentiation from mesenchymal stem cells?",
+        options: ["Wnt/β-catenin signalling pathway", "JAK-STAT signalling pathway", "cAMP-PKA signalling pathway", "Hedgehog signalling pathway"],
+        k: 3,
+        rationale: "The Wnt/β-catenin pathway is a master regulator of osteoblastogenesis. When Wnt ligands bind their receptors, β-catenin accumulates and translocates to the nucleus to activate osteoblast-specific transcription factors like Runx2."
+    },
+    {
+        system: "Skeletal System",
+        stem: "What is RANKL and what role does it play in bone remodelling?",
+        options: ["A calcium-binding protein secreted by osteoblasts that inhibits osteoclast formation", "A cytokine produced by osteoblasts and stromal cells that binds RANK on osteoclast precursors to stimulate osteoclastogenesis", "A hormone secreted by the parathyroid gland that activates bone-forming osteoblasts", "An enzyme secreted by osteoclasts that directly dissolves hydroxyapatite crystals in bone matrix"],
+        k: 0,
+        rationale: "RANKL (Receptor Activator of Nuclear factor Kappa-B Ligand) is expressed on osteoblasts and stromal cells. It binds RANK on osteoclast precursors, promoting their differentiation and activation. Osteoprotegerin (OPG) acts as a decoy receptor, competitively inhibiting RANKL and thus suppressing bone resorption."
+    },
+    {
+        system: "Skeletal System",
+        stem: "Parathyroid hormone (PTH) has paradoxical effects on bone depending on administration pattern. What is the explanation for this?",
+        options: ["Continuous PTH exposure activates osteoblasts while intermittent exposure activates osteoclasts exclusively", "Intermittent PTH preferentially stimulates osteoblast activity and bone formation, while continuous elevated PTH drives osteoclast-mediated bone resorption via RANKL upregulation", "PTH directly deposits calcium into bone matrix in pulses but leaches it continuously", "The paradox is explained entirely by PTH receptor desensitisation regardless of exposure pattern"],
+        k: 0,
+        rationale: "This PTH paradox has major clinical relevance: intermittent subcutaneous teriparatide (PTH 1-34) is used anabolically to treat severe osteoporosis, while chronically elevated endogenous PTH (hyperparathyroidism) causes bone loss through sustained osteoclast stimulation."
+    },
+    {
+        system: "Skeletal System",
+        stem: "What is the composition of the organic matrix of bone, and which protein predominates?",
+        options: ["Primarily elastin (90%) with collagen type II and proteoglycans making up the remainder", "Approximately 90% type I collagen with the remainder being non-collagenous proteins such as osteocalcin, osteopontin, and bone sialoprotein", "Equal proportions of collagen types I, II, and III with hydroxyapatite crystals embedded throughout", "Primarily fibronectin and laminin providing a scaffold for subsequent mineralisation"],
+        k: 0,
+        rationale: "Type I collagen fibres provide the tensile scaffold of bone. Non-collagenous proteins like osteocalcin (a marker of bone formation) regulate mineralisation. Hydroxyapatite [Ca10(PO4)6(OH)2] crystals embed in this organic matrix to provide compressive strength."
+    },
+    {
+        system: "Skeletal System",
+        stem: "In the context of fracture healing, what distinguishes primary (direct) bone healing from secondary (indirect) bone healing?",
+        options: ["Primary healing involves callus formation and is seen in stable fractures with small gaps; secondary healing requires rigid fixation with no gap", "Primary healing occurs only in cancellous bone; secondary healing is restricted to cortical bone regardless of fixation", "Primary healing requires direct contact or minimal gap with rigid fixation and no callus; secondary healing proceeds through haematoma, soft callus, hard callus, and remodelling stages", "Primary healing is faster in all scenarios and is always preferred clinically over secondary healing"],
+        k: 1,
+        rationale: "Secondary (indirect) healing is the natural process: haematoma → fibrocartilaginous callus → bony callus → remodelling. Primary healing requires absolute rigid internal fixation with precise anatomical reduction, allowing direct osteonal remodelling across the fracture without a callus."
+    },
+    {
+        system: "Skeletal System",
+        stem: "Which transcription factor is considered the master regulator of osteoblast differentiation?",
+        options: ["MyoD", "PPAR-γ", "Runx2 (Cbfa1)", "Sox9"],
+        k: 1,
+        rationale: "Runx2 (Runt-related transcription factor 2) is the essential osteoblast master regulator. Runx2 knockout mice completely lack bone formation. Heterozygous Runx2 mutations in humans cause cleidocranial dysplasia."
+    },
+    {
+        system: "Skeletal System",
+        stem: "What is the histological appearance of a Haversian system (osteon) in compact bone?",
+        options: ["Disorganised woven bone trabeculae surrounding multiple central vascular canals in a random lattice pattern", "Concentric lamellae of mineralised bone matrix surrounding a central canal containing blood vessels and nerves, with osteocytes in lacunae connected by canaliculi", "Parallel columns of osteoblasts depositing successive mineralised layers without any central vascular structure", "Sheets of type II collagen with embedded chondrocytes arranged in a columnar growth pattern"],
+        k: 0,
+        rationale: "Osteons are the structural units of compact bone. Perforating (Volkmann's) canals run perpendicularly to connect Haversian canals. Osteocytes in lacunae communicate via gap junctions through canaliculi, enabling mechanosensation and coordinated remodelling."
+    },
+    {
+        system: "Skeletal System",
+        stem: "How does sclerostin (SOST gene product) regulate bone formation?",
+        options: ["It stimulates osteoclast differentiation by upregulating RANKL expression on stromal cells", "It is secreted by osteocytes and inhibits the Wnt pathway by binding LRP5/6 co-receptors, thereby suppressing osteoblast activity", "It directly mineralises osteoid by acting as a nucleation site for hydroxyapatite crystal deposition", "It activates BMP signalling to drive mesenchymal stem cell commitment to the osteoblast lineage"],
+        k: 0,
+        rationale: "Sclerostin is produced by osteocytes under mechanical unloading. It antagonises Wnt signalling by blocking LRP5/6, reducing osteoblast activity. Anti-sclerostin antibodies (romosozumab) are approved anabolic osteoporosis treatments that exploit this pathway."
+    },
+    {
+        system: "Skeletal System",
+        stem: "What is the molecular basis of the triple helix structure of collagen?",
+        options: ["Three identical α-chains stabilised by disulfide bonds between cysteine residues at regular intervals", "Three polypeptide chains each with a repeating Gly-X-Y motif wound into a right-handed superhelix stabilised by interchain hydrogen bonds, with glycine at every third position essential because it is the only residue small enough to fit the interior", "A single polypeptide chain that folds back on itself three times stabilised by hydrophobic interactions in the core", "Three β-sheet domains crosslinked by lysyl oxidase-mediated covalent bonds prior to secretion"],
+        k: 0,
+        rationale: "The Gly-X-Y repeat is critical — Gly at position 3n occupies the sterically restricted central axis. X is often proline (hydroxylated to hydroxyproline by vitamin C-dependent prolyl hydroxylase). Osteogenesis imperfecta often results from Gly substitution mutations disrupting this structure."
+    },
+    {
+        system: "Skeletal System",
+        stem: "What is the significance of the epiphyseal growth plate zone of hypertrophy in endochondral ossification?",
+        options: ["It is the proliferating zone where chondrocytes actively divide to lengthen the cartilage template", "It is where chondrocytes enlarge (hypertrophy), begin secreting type X collagen and VEGF, attract vascular invasion, and undergo apoptosis — creating the scaffold for primary ossification", "It is the resting zone where quiescent chondrocytes act as stem cells for subsequent proliferation", "It is where osteoblasts first differentiate and begin depositing primary woven bone on the cartilage template"],
+        k: 0,
+        rationale: "Hypertrophic chondrocytes are critical orchestrators. Their VEGF secretion drives angiogenesis. Type X collagen facilitates calcification. Their apoptosis leaves calcified cartilage spicules onto which osteoblasts deposit woven bone, creating the primary spongiosa."
+    },
+    {
+        system: "Skeletal System",
+        stem: "Duchenne Muscular Dystrophy profoundly affects bone health. What is the primary molecular defect?",
+        options: ["Mutations in the COL1A1 gene encoding type I collagen, causing structurally weak bones", "Loss-of-function mutations in the dystrophin gene causing absence of the dystrophin-glycoprotein complex from the sarcolemma", "Gain-of-function mutations in the myostatin gene causing excessive muscle growth and secondary bone compression", "Mutations in the titin gene causing sarcomere instability and progressive myofibrillar disintegration"],
+        k: 0,
+        rationale: "Dystrophin connects the intracellular actin cytoskeleton to the extracellular matrix via the dystrophin-glycoprotein complex. Its absence causes membrane fragility, repeated contraction-induced injury, inflammation, and progressive muscle fibre replacement by fat and fibrosis."
+    },
+    {
+        system: "Skeletal System",
+        stem: "What is the mechanism by which bisphosphonates treat osteoporosis?",
+        options: ["They stimulate osteoblast differentiation by activating the Wnt/β-catenin signalling pathway", "They are incorporated into bone matrix and ingested by osteoclasts during resorption, where they inhibit farnesyl pyrophosphate synthase in the mevalonate pathway, causing osteoclast apoptosis", "They competitively inhibit RANKL binding to its receptor on osteoclast precursors, preventing their differentiation", "They increase intestinal calcium absorption by acting as vitamin D receptor agonists"],
+        k: 0,
+        rationale: "Nitrogen-containing bisphosphonates (alendronate, zoledronate) inhibit farnesyl pyrophosphate synthase, disrupting prenylation of GTPases (Ras, Rho, Rac) essential for osteoclast cytoskeletal function and survival, ultimately inducing osteoclast apoptosis."
+    },
+    {
+        system: "Skeletal System",
+        stem: "What is the role of fibroblast growth factor 23 (FGF23) in mineral metabolism?",
+        options: ["It is produced by bone (osteocytes) and acts on the kidney to reduce phosphate reabsorption and suppress active vitamin D production, lowering serum phosphate", "It is secreted by the parathyroid glands to increase calcium absorption from bone and intestine", "It stimulates osteoblast differentiation and bone mineralisation by activating FGFR1 on osteoblast precursors", "It is produced by the kidney to signal phosphate deficiency to osteoclasts, driving bone resorption to release phosphate"],
+        k: 3,
+        rationale: "FGF23 is a bone-derived hormone (phosphatonin) that reduces renal phosphate reabsorption (via NaPi cotransporters) and suppresses 1α-hydroxylase, lowering 1,25-dihydroxyvitamin D. Excess FGF23 causes hypophosphataemic rickets; deficiency causes hyperphosphataemia and ectopic calcification."
+    },
+    {
+        system: "Skeletal System",
+        stem: "In rheumatoid arthritis, what is the role of synovial pannus tissue in joint destruction?",
+        options: ["Pannus is a fibrocartilaginous repair tissue that replaces damaged hyaline cartilage with mechanically inferior scar tissue", "Pannus is an invasive vascularised granulation tissue derived from hyperplastic synoviocytes that directly erodes cartilage and subchondral bone through protease and cytokine secretion", "Pannus forms when synovial fluid accumulates under pressure and mechanically displaces articular cartilage from subchondral bone", "Pannus is a layer of immune complexes deposited on the articular surface that activates complement and causes chondrocyte apoptosis"],
+        k: 0,
+        rationale: "In RA, activated synoviocytes and infiltrating immune cells form invasive pannus. It secretes MMPs (matrix metalloproteinases) and cathepsins that directly destroy cartilage, while TNF-α and IL-17 drive osteoclast-mediated bone erosion at pannus-bone interfaces."
+    },
+    {
+        system: "Skeletal System",
+        stem: "What is the molecular explanation for the increased fracture risk in osteoporosis beyond simply reduced bone mineral density?",
+        options: ["Osteoporotic bone uniquely lacks type I collagen entirely, leaving only poorly mineralised osteoid that fractures under minimal stress", "Osteoporosis involves not only reduced bone mass but also deterioration of bone microarchitecture (trabecular thinning, perforation, and loss of connectivity) and impaired bone material properties including increased collagen crosslink abnormalities", "The reduced BMD leads to compensatory osteoblast hyperactivity producing structurally defective woven bone replacing normal lamellar bone", "Fracture risk increases solely due to increased osteoclast activity dissolving periosteal bone, thinning cortical walls without affecting trabecular architecture"],
+        k: 0,
+        rationale: "BMD explains only about 60-70% of fracture risk variance. Trabecular architecture deterioration (perforation of plates, loss of cross-struts) dramatically reduces load-bearing capacity beyond what BMD predicts. Collagen maturation defects and microdamage accumulation further compromise bone quality."
+    },
+
+    /* ---- MUSCULAR & EXERCISE PHYSIOLOGY (15) ---- */
+    {
+        system: "Exercise Physiology",
+        stem: "What is the molecular trigger for exercise-induced mitochondrial biogenesis in skeletal muscle?",
+        options: ["Elevated serum insulin concentrations activating PI3K-Akt-mTOR signalling in muscle fibres", "PGC-1α (peroxisome proliferator-activated receptor gamma coactivator 1-alpha) activation by AMPK and p38 MAPK in response to energy stress and calcium signalling during exercise", "Direct transcriptional activation of mitochondrial DNA by reactive oxygen species produced during exercise", "Satellite cell fusion with existing fibres bringing new mitochondria from quiescent muscle stem cells"],
+        k: 0,
+        rationale: "PGC-1α is the master regulator of mitochondrial biogenesis. Exercise activates AMPK (low ATP:AMP ratio) and p38 MAPK, which phosphorylate and activate PGC-1α. It then co-activates transcription factors driving expression of both nuclear and mitochondrial genes encoding respiratory chain components."
+    },
+    {
+        system: "Exercise Physiology",
+        stem: "Explain the Frank-Starling mechanism of the heart.",
+        options: ["Heart rate increases proportionally to venous return due to stretch-activated baroreceptors in the atrial wall", "Increased ventricular end-diastolic volume stretches myocardial sarcomeres toward optimal filament overlap, increasing calcium sensitivity of troponin and the force of subsequent contraction without requiring neural input", "Sympathetic innervation of the SA node increases stroke volume through positive chronotropy independent of preload", "Coronary artery vasodilation increases myocardial oxygen supply, directly increasing ATP availability and contractile force"],
+        k: 0,
+        rationale: "The Frank-Starling law states that stroke volume increases intrinsically in response to greater preload (ventricular filling). Sarcomere stretch optimises actin-myosin overlap and increases myofilament calcium sensitivity, allowing the heart to automatically match output to venous return."
+    },
+    {
+        system: "Exercise Physiology",
+        stem: "What is the significance of the lactate threshold (LT) in exercise physiology?",
+        options: ["It is the exercise intensity at which blood lactate first becomes detectable, indicating anaerobic glycolysis has commenced for the first time", "It is the exercise intensity above which lactate production exceeds the body's capacity to clear it, causing progressive accumulation — it correlates strongly with endurance performance", "It represents the maximal oxygen uptake (VO2max) of the individual and is therefore the primary determinant of aerobic fitness", "It is the point at which type I muscle fibres are fully exhausted and type II fibres are exclusively recruited"],
+        k: 0,
+        rationale: "LT (or the related concept OBLA — Onset of Blood Lactate Accumulation at 4 mmol/L) reflects the balance between glycolytic flux and lactate clearance. Athletes with higher LT as a percentage of VO2max sustain faster paces aerobically. Training shifts LT rightward."
+    },
+    {
+        system: "Exercise Physiology",
+        stem: "What is excitation-contraction coupling in cardiac muscle, and how does it differ from skeletal muscle?",
+        options: ["Cardiac muscle relies entirely on intracellular calcium stores with no calcium influx across the sarcolemma, while skeletal muscle depends entirely on extracellular calcium entering through L-type channels", "In cardiac muscle, calcium-induced calcium release (CICR) means trigger calcium entering through L-type channels activates ryanodine receptors (RyR2) to release far more calcium from the SR; skeletal muscle relies primarily on mechanical coupling between DHPR and RyR1 without requiring calcium influx", "Both muscle types use identical mechanisms; the only difference is the density of L-type calcium channels in their respective T-tubule membranes", "Cardiac muscle contraction is triggered exclusively by IP3-mediated calcium release from the endoplasmic reticulum, while skeletal muscle uses voltage-dependent DHPR-RyR1 coupling"],
+        k: 0,
+        rationale: "CICR in cardiac muscle means the heart is much more dependent on extracellular calcium and is exquisitely sensitive to drugs and conditions affecting calcium handling (e.g., calcium channel blockers reduce contractility). Skeletal muscle RyR1 is directly gated by DHPR conformational change, making it more self-contained."
+    },
+    {
+        system: "Exercise Physiology",
+        stem: "What is the mTORC1 signalling pathway's role in exercise-induced muscle protein synthesis?",
+        options: ["mTORC1 suppresses muscle protein synthesis during resistance exercise to conserve amino acids for energy metabolism", "Resistance exercise activates mTORC1 through mechanical stimulation, amino acid sensing, and growth factor signalling, driving ribosome biogenesis and mRNA translation to increase muscle protein synthesis rates", "mTORC1 exclusively mediates the catabolic response to endurance exercise by activating autophagy and proteasomal degradation pathways", "mTORC1 activation during exercise signals satellite cells to proliferate and fuse into existing fibres, which is the sole mechanism of muscle hypertrophy"],
+        k: 0,
+        rationale: "mTORC1 phosphorylates p70S6K1 and 4EBP1, promoting ribosome biogenesis and cap-dependent mRNA translation. Leucine is a particularly potent mTORC1 activator via Rag GTPases. mTORC1's role in hypertrophy is confirmed by rapamycin (mTOR inhibitor) blocking exercise-induced muscle growth."
+    },
+    {
+        system: "Exercise Physiology",
+        stem: "What is the oxygen dissociation curve, and what is the physiological importance of its sigmoidal shape?",
+        options: ["The sigmoidal shape results from random variation in haemoglobin oxygen affinity and has no particular physiological advantage over a hyperbolic curve", "The sigmoidal shape reflects cooperative binding: once one oxygen binds, haemoglobin's affinity for subsequent oxygens increases (T→R state transition), enabling efficient loading at high PO2 (lungs) and substantial unloading at lower PO2 (tissues)", "The curve is sigmoidal because haemoglobin undergoes irreversible structural changes upon initial oxygenation that permanently increase binding affinity for subsequent oxygen molecules", "The sigmoidal shape is produced by the two alpha subunits of haemoglobin binding oxygen before the two beta subunits, creating a sequential rather than cooperative binding pattern"],
+        k: 0,
+        rationale: "Cooperative binding (allostery) means the T (tense, low-affinity) to R (relaxed, high-affinity) state transition makes haemoglobin ideal for bulk oxygen transport. The steep middle portion of the curve means small PO2 changes in tissues cause large O2 unloading. 2,3-BPG, CO2, H+, and temperature shift the curve rightward (Bohr effect)."
+    },
+    {
+        system: "Exercise Physiology",
+        stem: "How does the sympathetic nervous system increase heart rate at the molecular level?",
+        options: ["Norepinephrine binds β1-adrenoceptors on SA node cells, activating Gs protein, raising cAMP via adenylyl cyclase, which activates PKA to phosphorylate HCN (funny current) channels, accelerating spontaneous depolarisation rate", "Acetylcholine binds nicotinic receptors on SA node cells, opening sodium channels that directly depolarise the pacemaker cells to threshold more rapidly", "Sympathetic nerve terminals release ATP that directly opens P2X channels in SA node cells, causing rapid depolarisation independent of second messenger systems", "Norepinephrine binds α1-adrenoceptors, activating PLC-IP3 signalling to release calcium from SA node SR, which directly gates voltage-sensitive calcium channels"],
+        k: 3,
+        rationale: "β1-adrenoceptor → Gs → adenylyl cyclase → ↑cAMP → PKA. PKA phosphorylates: HCN4 channels (increases If 'funny current'), L-type Ca2+ channels (increases ICaL, positive inotropy), phospholamban (enhances SR Ca2+ reuptake, positive lusitropy). This comprehensively explains sympathetic cardiac acceleration."
+    },
+    {
+        system: "Exercise Physiology",
+        stem: "What is the role of myokines in the systemic health benefits of exercise?",
+        options: ["Myokines are degradation products of contractile proteins released during muscle damage that signal immune cells to initiate repair processes exclusively within injured muscle tissue", "Myokines are cytokines and peptides secreted by contracting skeletal muscle that act in autocrine, paracrine, and endocrine fashions to mediate inter-organ crosstalk, including anti-inflammatory, metabolic, and neurotrophic effects throughout the body", "Myokines exclusively regulate satellite cell activation and muscle regeneration without any significant systemic endocrine effects", "Myokines are hormones secreted by the hypothalamus in response to afferent signals from proprioceptors during exercise that coordinate the systemic metabolic response"],
+        k: 0,
+        rationale: "Key myokines include IL-6 (anti-inflammatory in exercise context, stimulates fat oxidation), irisin (promotes browning of adipose tissue, neurotrophic), BDNF (neuroplasticity), FGF21 (metabolic regulation), and myostatin (negative regulator of muscle mass). This identifies muscle as a secretory endocrine organ."
+    },
+    {
+        system: "Exercise Physiology",
+        stem: "What is the Fick principle and its application to calculating maximal oxygen consumption (VO2max)?",
+        options: ["VO2max equals the product of maximum heart rate and body surface area, with oxygen extraction coefficient applied as a correction factor", "VO2max = cardiac output × arteriovenous oxygen difference (a-vO2 diff); maximised by both maximal cardiac output and maximal peripheral oxygen extraction, with central cardiac limitations dominating in most individuals", "The Fick principle states that VO2max is solely determined by pulmonary diffusing capacity and is therefore unchanged by cardiac training adaptations", "VO2max is calculated from the respiratory exchange ratio (RER) at maximal effort, where RER of 1.0 indicates pure carbohydrate oxidation at maximal intensity"],
+        k: 0,
+        rationale: "Adolf Fick's principle: oxygen consumed = cardiac output × (arterial O2 content − venous O2 content). VO2max is limited centrally (maximum cardiac output ~20-25 L/min in trained athletes) and peripherally (a-vO2 diff ~16-17 mL/100mL blood). Training improves both components."
+    },
+    {
+        system: "Exercise Physiology",
+        stem: "What molecular mechanism underlies insulin resistance in skeletal muscle with chronic physical inactivity?",
+        options: ["Inactivity reduces GLUT4 transporter expression at baseline but does not affect insulin-stimulated translocation to the sarcolemma", "Intramyocellular lipid accumulation generates ceramide and diacylglycerol species that activate PKC-θ and inhibit IRS-1 serine phosphorylation, impairing PI3K-Akt-GLUT4 signalling downstream of the insulin receptor", "Physical inactivity primarily increases hepatic glucose output rather than impairing skeletal muscle insulin sensitivity directly", "Inactivity causes downregulation of the insulin receptor itself through decreased gene transcription driven by reduced mechanical loading of myofibres"],
+        k: 0,
+        rationale: "Lipotoxic intermediates from incomplete fatty acid oxidation activate novel PKCs that serine-phosphorylate IRS-1 (converting it from a PI3K activator to an inhibitor). Exercise reverses this through AMPK-mediated insulin-independent GLUT4 translocation and improved lipid oxidative capacity."
+    },
+    {
+        system: "Exercise Physiology",
+        stem: "What is the molecular basis of heat acclimatisation in exercising humans?",
+        options: ["Heat acclimatisation involves genetic mutation of temperature-sensitive ion channels within two weeks of repeated heat exposure", "Repeated heat stress upregulates heat shock proteins (particularly HSP70), increases plasma volume through aldosterone-mediated sodium and water retention, and improves sudomotor function and cardiovascular stability through adaptations in thermoregulatory centres", "Heat acclimatisation is entirely a cardiovascular adaptation involving left ventricular hypertrophy increasing stroke volume during thermal challenge", "Acclimatisation involves downregulation of hypothalamic temperature set-point through progressive desensitisation of anterior hypothalamic thermosensitive neurons"],
+        k: 0,
+        rationale: "Key acclimatisation adaptations: ↑plasma volume (earlier, more copious sweating), ↑sweat rate with reduced sweat sodium concentration (aldosterone effect), lower core temperature threshold for sweating, reduced cardiovascular strain, and upregulation of cytoprotective HSPs that prevent protein denaturation."
+    },
+    {
+        system: "Exercise Physiology",
+        stem: "What is the molecular mechanism of exercise-induced GLUT4 translocation in skeletal muscle?",
+        options: ["Exercise activates insulin receptor autophosphorylation through mechanical distortion of the receptor's extracellular domain, initiating the identical signalling cascade as insulin", "AMPK activated by low ATP:AMP ratio and CaMKII activated by calcium transients during contraction phosphorylate TBC1D1 and TBC1D4 (AS160), inactivating their GAP activity toward Rab GTPases, allowing GLUT4 storage vesicles to dock and fuse with the sarcolemma", "Exercise-induced adrenaline binds β2-adrenoceptors on muscle, activating cAMP-PKA signalling that directly phosphorylates GLUT4 vesicle-associated VAMP2, enabling membrane fusion", "Mechanical stretch of the sarcolemma during contraction directly opens mechanosensitive GLUT4 channels embedded in the plasma membrane, bypassing intracellular vesicle trafficking entirely"],
+        k: 0,
+        rationale: "TBC1D1 and TBC1D4 are Rab-GAPs that normally keep Rab10/8a in GDP-bound (inactive) state, retaining GLUT4 vesicles intracellularly. AMPK and CaMKII phosphorylation inhibits this GAP activity, activating Rabs and enabling GLUT4 vesicle exocytosis — this is clinically significant for type 2 diabetes management."
+    },
+    {
+        system: "Exercise Physiology",
+        stem: "How does detraining affect skeletal muscle at the molecular and fibre-type level?",
+        options: ["Detraining exclusively reduces muscle fibre number (hyperplasia reversal) with no changes in individual fibre diameter or metabolic enzyme content", "Within weeks, detraining reduces mitochondrial density and oxidative enzyme activity, shifts fibre type composition toward type IIx fibres, decreases capillary density, and reduces muscle protein synthesis rates — with aerobic adaptations lost faster than strength adaptations", "Strength adaptations are lost within days of detraining due to rapid sarcomere disassembly, while aerobic enzyme changes persist for months due to mitochondrial longevity", "Detraining only affects the nervous system's motor unit recruitment patterns without any structural or biochemical changes in the muscle fibres themselves"],
+        k: 0,
+        rationale: "Aerobic adaptations (mitochondrial density, oxidative enzymes, capillarity) regress within 2-4 weeks of inactivity. Strength and hypertrophy changes persist longer due to maintained neural drive and slower myofibrillar protein turnover. The 'muscle memory' phenomenon involves epigenetic changes at myonuclei."
+    },
+    {
+        system: "Exercise Physiology",
+        stem: "What is the mechanistic basis of overtraining syndrome (OTS)?",
+        options: ["OTS results from complete glycogen depletion causing irreversible mitochondrial damage and permanent type I fibre atrophy", "OTS likely involves dysregulation of the hypothalamic-pituitary-adrenal axis, chronic systemic inflammation from excessive training load, altered neurotransmitter balance (particularly serotonin:dopamine ratio), and autonomic nervous system imbalance leading to parasympathetic dominance", "OTS is caused exclusively by iron deficiency anaemia resulting from increased haemolysis during high-impact exercise", "OTS is a purely psychological phenomenon with no demonstrable neuroendocrine or inflammatory biomarker changes distinguishing it from normal training fatigue"],
+        k: 0,
+        rationale: "OTS biomarkers are inconsistent but may include elevated cytokines (IL-6, IL-1β), suppressed testosterone:cortisol ratio, altered HPA axis reactivity, and sympathetic-to-parasympathetic ANS shift (reduced HRV). The mechanisms overlap with chronic fatigue syndrome, making diagnosis and treatment challenging."
+    },
+    {
+        system: "Exercise Physiology",
+        stem: "What is the molecular role of AMP-activated protein kinase (AMPK) as an energy sensor in skeletal muscle during exercise?",
+        options: ["AMPK is activated by rising ATP concentration during exercise and drives anabolic processes including protein synthesis and glycogen deposition to prepare for subsequent bouts", "AMPK is activated by increased AMP:ATP ratio (energy deficit) during exercise; it inhibits anabolic pathways (mTORC1, fatty acid synthesis) and activates catabolic pathways (fatty acid oxidation, GLUT4 translocation, mitochondrial biogenesis via PGC-1α) to restore energy balance", "AMPK exclusively regulates cardiac muscle energy metabolism and has no significant direct role in skeletal muscle during exercise", "AMPK activation during exercise primarily signals satellite cell activation for immediate muscle repair rather than acute metabolic regulation"],
+        k: 0,
+        rationale: "AMPK is the cellular energy rheostat. Its targets in muscle include: ACC (phospho-inhibition→↑fatty acid oxidation), PFK-2 (↑glycolysis), TBC1D1/4 (↑GLUT4), TSC2 (inhibits mTORC1→↓protein synthesis), and PGC-1α (↑mitochondrial biogenesis). This coordinated response is fundamental to metabolic adaptation to exercise."
+    },
+
+    /* ---- CARDIOVASCULAR & RESPIRATORY PHYSIOLOGY (15) ---- */
+    {
+        system: "Cardiovascular Physiology",
+        stem: "What is the molecular mechanism of action of cardiac glycosides (e.g., digoxin) in heart failure?",
+        options: ["Digoxin activates β1-adrenoceptors on cardiomyocytes, mimicking sympathetic stimulation to increase heart rate and contractility", "Digoxin inhibits Na+/K+-ATPase on cardiomyocytes, raising intracellular Na+, which reduces NCX extrusion of Ca2+, increasing intracellular Ca2+ stores and enhancing contractility; it also increases vagal tone reducing heart rate", "Digoxin blocks L-type calcium channels, paradoxically increasing contractility by prolonging the action potential plateau and allowing more calcium to enter", "Digoxin activates phosphodiesterase III to prevent cAMP breakdown, elevating intracellular cAMP and activating PKA-mediated phosphorylation of calcium handling proteins"],
+        k: 0,
+        rationale: "Na+/K+-ATPase inhibition → [Na+]i rises → NCX (3Na+/Ca2+ exchanger) less able to extrude Ca2+ → [Ca2+]i increases → greater SR loading → stronger contractions. Vagal sensitisation slows the ventricular rate in atrial fibrillation. Narrow therapeutic index makes digoxin toxicity monitoring essential."
+    },
+    {
+        system: "Cardiovascular Physiology",
+        stem: "Explain the renin-angiotensin-aldosterone system (RAAS) and its role in blood pressure regulation.",
+        options: ["Renin cleaves angiotensinogen to angiotensin I; ACE converts it to angiotensin II; AngII causes vasoconstriction via AT1R, stimulates aldosterone from adrenal cortex increasing renal Na+/water retention, stimulates ADH, and promotes cardiac and vascular remodelling — all raising BP", "Renin is released by the posterior pituitary in response to haemorrhage and directly constricts arterioles without requiring conversion to downstream effectors", "Aldosterone is the primary initiator of the cascade, being released directly from the adrenal gland in response to reduced baroreceptor firing, subsequently stimulating renin secretion from the JGA", "ACE directly converts renin to the active effector angiotensin II, which then stimulates the juxtaglomerular apparatus to produce aldosterone in a positive feedback loop"],
+        k: 3,
+        rationale: "RAAS is a crucial long-term BP regulator. ACE inhibitors block AngII formation; ARBs block AT1R; aldosterone antagonists (spironolactone) block Na+ retention. AngII also directly stimulates sympathetic outflow, cardiac hypertrophy, and renal proximal tubule Na+ reabsorption independent of aldosterone."
+    },
+    {
+        system: "Cardiovascular Physiology",
+        stem: "What is the molecular mechanism of nitric oxide (NO) in vascular smooth muscle relaxation?",
+        options: ["NO directly hyperpolarises smooth muscle cell membranes by activating ATP-sensitive potassium channels, reducing calcium entry through voltage-gated channels", "NO diffuses into smooth muscle cells and activates soluble guanylate cyclase, increasing cGMP, which activates PKG; PKG phosphorylates myosin light chain kinase (MLCK) reducing its activity, and promotes SR calcium sequestration and KATP channel activation, causing vasodilation", "NO binds to prostacyclin receptors on smooth muscle cells, inhibiting phospholipase C and reducing IP3-mediated calcium release from the SR", "NO covalently modifies and permanently inactivates voltage-gated L-type calcium channels on vascular smooth muscle, causing irreversible vasodilation that persists well beyond NO's half-life"],
+        k: 0,
+        rationale: "eNOS produces NO from L-arginine in endothelium. cGMP-PKG signalling is the primary pathway: MLCK phosphorylation reduces actin-myosin interaction, while BKCa and KATP channel activation hyperpolarises the membrane. PDE5 inhibitors (sildenafil) potentiate NO signalling by preventing cGMP breakdown."
+    },
+    {
+        system: "Cardiovascular Physiology",
+        stem: "What is the pathophysiological mechanism of atherosclerosis at the molecular level?",
+        options: ["Atherosclerosis begins when high-density lipoproteins deposit directly into the arterial intima, triggering a foreign body giant cell reaction that calcifies into plaque", "LDL particles enter and become retained in the arterial intima where they undergo oxidative modification; oxidised LDL triggers endothelial dysfunction, monocyte recruitment, macrophage foam cell formation, smooth muscle migration, and fibrous cap development over a lipid-rich necrotic core", "Atherosclerotic plaques form from calcium phosphate crystals precipitating from supersaturated blood onto damaged endothelium, with lipid accumulation being a secondary phenomenon", "Plaque formation begins with platelet adhesion to intact endothelium that releases growth factors causing smooth muscle proliferation, which then passively traps circulating lipoproteins within the vessel wall"],
+        k: 0,
+        rationale: "Key molecular steps: LDL retention → oxidation → SR-A and CD36 scavenger receptor uptake by macrophages → foam cells → fatty streak → VSMC migration driven by PDGF → fibrous cap. Plaque rupture exposes thrombogenic core, triggering ACS. Statins reduce LDL; anti-inflammatory strategies are emerging."
+    },
+    {
+        system: "Cardiovascular Physiology",
+        stem: "What is the molecular basis of pulmonary arterial hypertension (PAH)?",
+        options: ["PAH results from left heart failure causing passive elevation of pulmonary venous pressure that is transmitted backward to the pulmonary arteries", "PAH involves loss-of-function mutations in BMPR2 (bone morphogenetic protein receptor 2) in familial forms, leading to excessive pulmonary arterial smooth muscle cell proliferation and reduced apoptosis; endothelin-1, thromboxane, and reduced prostacyclin/NO further drive vasoconstriction and remodelling", "PAH is caused by hypoxic pulmonary vasoconstriction becoming permanent after prolonged altitude exposure, with no role for genetic factors or endothelial dysfunction", "PAH results from autoimmune destruction of pulmonary capillary endothelial cells causing progressive obliteration of the pulmonary vascular bed with no involvement of smooth muscle proliferation"],
+        k: 0,
+        rationale: "BMPR2 mutations (50-80% of heritable PAH) impair anti-proliferative BMP signalling. Approved therapies target: endothelin axis (bosentan), NO-cGMP axis (sildenafil, riociguat), and prostacyclin pathway (epoprostenol). Imbalance of vasodilators (PGI2, NO) versus vasoconstrictors (ET-1, TXA2) drives both vasoconstriction and proliferative remodelling."
+    },
+    {
+        system: "Cardiovascular Physiology",
+        stem: "What is the physiological mechanism of the baroreceptor reflex?",
+        options: ["Baroreceptors in the carotid body detect arterial oxygen content and reflexly increase heart rate when PaO2 falls below 60 mmHg via glossopharyngeal afferents", "Stretch-sensitive mechanoreceptors in the carotid sinus and aortic arch increase firing with rising arterial pressure; afferent signals via CN IX and X to the NTS increase parasympathetic outflow (reducing HR) and decrease sympathetic outflow (reducing SV and peripheral resistance), buffering acute BP changes", "Baroreceptors detect blood viscosity changes and trigger reflex erythropoiesis to normalise oxygen delivery when viscosity falls", "Low pressure baroreceptors in the ventricles detect reduced filling and directly activate renin secretion from the JGA through a direct sympathetic reflex arc bypassing the central nervous system"],
+        k: 0,
+        rationale: "The arterial baroreflex provides rapid (seconds) beat-to-beat BP buffering. It is a negative feedback system — hypertension is corrected by increased vagal inhibition of the heart. Chronic hypertension resets baroreceptors to the higher level. Baroreflex sensitivity is reduced in heart failure, contributing to autonomic imbalance."
+    },
+    {
+        system: "Cardiovascular Physiology",
+        stem: "What is hypoxic pulmonary vasoconstriction (HPV) and what is its proposed molecular mechanism?",
+        options: ["HPV is vasodilation of pulmonary arteries in response to low oxygen, directing blood to better-ventilated regions through prostacyclin-mediated smooth muscle relaxation", "HPV is constriction of pulmonary arterioles in response to alveolar hypoxia, diverting blood to better-ventilated regions; the mechanism involves mitochondrial reactive oxygen species sensing causing inhibition of Kv channels, membrane depolarisation, L-type Ca2+ channel activation, and smooth muscle contraction", "HPV is mediated by endothelin receptors on pulmonary smooth muscle that directly sense dissolved O2 concentration through a haem-containing O2 binding domain", "HPV involves ATP release from hypoxic type II pneumocytes activating P2Y receptors on adjacent smooth muscle cells, triggering IP3-mediated calcium release and contraction"],
+        k: 0,
+        rationale: "HPV is unique to pulmonary vasculature (systemic vessels dilate to hypoxia). It optimises V/Q matching — hypoxic alveoli have reduced blood flow, preventing perfusion of unventilated lung. In generalised hypoxia (altitude, COPD), HPV becomes maladaptive, causing pulmonary hypertension. HIF-1α drives chronic remodelling."
+    },
+    {
+        system: "Cardiovascular Physiology",
+        stem: "What are the molecular targets of commonly used antihypertensive drug classes?",
+        options: ["ACE inhibitors block renin secretion; ARBs block aldosterone receptors; beta-blockers block α1-adrenoceptors; CCBs block ryanodine receptors in cardiac SR", "ACE inhibitors block conversion of AngI→AngII; ARBs block AT1R; beta-blockers reduce sympathetic cardiac drive (HR/SV); CCBs block L-type Ca2+ channels reducing vascular tone and cardiac contractility; thiazides reduce plasma volume", "All antihypertensives ultimately act on the same final common pathway of reducing intracellular calcium in smooth muscle through distinct upstream mechanisms converging on cGMP elevation", "Beta-blockers directly vasodilate peripheral arteries through β2-adrenoceptor activation; ACE inhibitors stimulate atrial natriuretic peptide release; ARBs block ACE directly rather than angiotensin receptors"],
+        k: 0,
+        rationale: "These five major classes address different components: RAAS (ACEi, ARB), sympathetic nervous system (β-blocker), smooth muscle calcium handling (CCB), and renal volume (thiazides). Their different mechanisms explain synergistic BP reduction when combined, and their different side-effect profiles guide individualised prescribing."
+    },
+    {
+        system: "Cardiovascular Physiology",
+        stem: "What is the mechanism of myocardial stunning and hibernation as adaptations to chronic ischaemia?",
+        options: ["Stunning and hibernation both represent permanent structural loss of cardiomyocytes replaced by fibrotic scar tissue that is indistinguishable from infarcted myocardium on imaging", "Stunning is prolonged but reversible contractile dysfunction after transient ischaemia-reperfusion (caused by calcium overload and ROS injury); hibernation is chronic downregulation of contractile function in viable myocardium with chronic reduced flow — both are reversible with revascularisation", "Stunning refers to permanent reduction in heart rate following ischaemia due to SA node fibrosis; hibernation refers to right ventricular adaptation to chronic pulmonary hypertension", "Both stunning and hibernation result from irreversible mitochondrial permeability transition pore opening causing cardiomyocyte metabolic failure, distinguishing them from infarcted zones only by degree of ATP depletion"],
+        k: 0,
+        rationale: "Distinguishing viable but dysfunctional myocardium (stunned/hibernating) from scar is critical: viable tissue recovers with revascularisation (PCI or CABG) while scar does not. FDG-PET, dobutamine stress echo, and cardiac MRI with gadolinium can identify viability preoperatively."
+    },
+    {
+        system: "Cardiovascular Physiology",
+        stem: "What molecular changes drive pathological cardiac hypertrophy versus physiological (exercise-induced) cardiac hypertrophy?",
+        options: ["Exercise hypertrophy involves cardiomyocyte hypertrophy driven by PI3K(p110α)-Akt-mTOR signalling with normal or enhanced function; pathological hypertrophy activates calcineurin-NFAT and MAPK pathways, driving fetal gene re-expression (β-MHC, ANP, BNP), fibrosis, and impaired diastolic function", "Exercise and pathological hypertrophy are molecularly identical — the functional difference reflects only the degree of hypertrophy rather than the signalling pathways engaged", "Pathological hypertrophy is purely a consequence of cardiomyocyte hyperplasia (cell number increase) while physiological hypertrophy involves only cardiomyocyte enlargement", "Exercise hypertrophy is exclusively driven by the mechanical stretch of cardiac myocytes directly activating sarcomeric protein synthesis without any growth factor receptor involvement"],
+        k: 3,
+        rationale: "Physiological: PI3K-Akt-mTOR (IGF-1/insulin signalling), concentric or eccentric geometry, preserved or improved function, reversible. Pathological: calcineurin dephosphorylates NFAT → nuclear translocation → fetal gene program, reactive fibrosis via TGF-β, mitochondrial dysfunction, diastolic and systolic impairment. This distinction is therapeutically and prognostically critical."
+    },
+    {
+        system: "Cardiovascular Physiology",
+        stem: "What is the molecular basis of sickle cell disease and how does it affect microvascular blood flow?",
+        options: ["A point mutation (Glu6Val) in β-globin causes HbS to polymerise under deoxygenated conditions, distorting erythrocytes into rigid sickle shapes that obstruct microvascular flow, cause vaso-occlusive crises, haemolysis, endothelial dysfunction, and chronic organ damage", "Sickle cell disease involves deletion of both β-globin genes, resulting in β-thalassaemia major with compensatory fetal haemoglobin (HbF) production preventing sickling", "A point mutation causes HbS to have increased oxygen affinity, preventing normal oxygen unloading to tissues and causing functional anaemia without any change in red cell morphology", "HbS polymerisation occurs under fully oxygenated conditions in the pulmonary capillaries, causing primary lung disease with secondary haematological consequences rather than microvascular obstruction"],
+        k: 3,
+        rationale: "Val6 creates a hydrophobic patch that allows HbS-HbS polymerisation when deoxygenated. Hydroxyurea treatment increases HbF production (which doesn't sickle). Gene therapy strategies include β-globin gene addition and BCL11A silencing to reactivate HbF. Understanding the molecular defect enabled the first disease-modifying treatments."
+    },
+    {
+        system: "Cardiovascular Physiology",
+        stem: "What is von Willebrand factor (vWF) and what is its role in haemostasis?",
+        options: ["vWF is a clotting factor produced by hepatocytes that acts in the final common pathway to crosslink fibrin monomers into a stable clot", "vWF is a large multimeric glycoprotein produced by endothelial cells and platelets that bridges damaged subendothelial collagen to platelet GPIb receptors under high shear, facilitating primary platelet plug formation; it also acts as a carrier for factor VIII, protecting it from premature degradation", "vWF is an anticoagulant protein that prevents inappropriate platelet activation in intact vessels by binding and inactivating thrombin", "vWF is synthesised exclusively by megakaryocytes and stored in platelet alpha granules, released only during platelet activation to amplify secondary haemostasis through the intrinsic pathway"],
+        k: 0,
+        rationale: "vWD (von Willebrand disease) is the most common inherited bleeding disorder. High shear stress unfolds vWF multimers exposing GPIb binding sites — this shear-dependent adhesion is most critical in arterioles and damaged vessel areas. ADAMTS13 cleaves ultralarge vWF multimers; its deficiency causes TTP."
+    },
+    {
+        system: "Cardiovascular Physiology",
+        stem: "What is the molecular cascade of the coagulation pathway leading to fibrin clot formation?",
+        options: ["Tissue factor exposed by vascular injury binds factor VIIa (extrinsic pathway), activating factor X; Xa with Va forms prothrombinase converting prothrombin to thrombin; thrombin converts fibrinogen to fibrin monomers that polymerise and are crosslinked by factor XIIIa", "The coagulation cascade begins exclusively through the intrinsic pathway when factor XII contacts collagen; the extrinsic pathway is only relevant in laboratory tests and has no in vivo significance", "Thrombin is the first activated factor produced by the extrinsic pathway; it then activates all other coagulation factors in sequence before fibrinogen conversion occurs as the terminal step", "Fibrinogen spontaneously polymerises into fibrin at sites of vascular injury without requiring enzyme activation; thrombin merely accelerates a thermodynamically favourable spontaneous process"],
+        k: 3,
+        rationale: "TF-VIIa initiates in vivo coagulation (extrinsic); the intrinsic pathway (contact activation) amplifies it. Warfarin inhibits vitamin K-dependent factors (II, VII, IX, X, protein C/S). Direct oral anticoagulants (DOACs) target factor Xa (apixaban, rivaroxaban) or thrombin (dabigatran) directly."
+    },
+    {
+        system: "Cardiovascular Physiology",
+        stem: "What is the molecular mechanism of complement system activation in the immune response, and how does it affect vascular permeability?",
+        options: ["The complement system is activated exclusively through the classical pathway requiring antigen-antibody complex formation; it has no role in innate immunity or sterile inflammatory conditions", "Complement activation (classical, lectin, or alternative pathways) converges on C3 convertase cleaving C3 into C3a and C3b; C3b opsonises pathogens for phagocytosis; C5a is a potent anaphylatoxin causing mast cell degranulation and vascular permeability increase; MAC (C5b-9) directly lyses pathogens", "Complement proteins increase vascular permeability by directly binding endothelial tight junction proteins ZO-1 and occludin and causing their proteolytic degradation", "Complement activation terminates the inflammatory response by opsonising and clearing inflammatory mediators, reducing rather than increasing vascular permeability during acute inflammation"],
+        k: 0,
+        rationale: "C5a and C3a (anaphylatoxins) bind receptors on mast cells and basophils triggering histamine release, and directly on endothelial cells causing retraction and gap formation. C5a is also a powerful neutrophil chemoattractant. Hereditary angioedema results from C1-inhibitor deficiency causing uncontrolled bradykinin and complement activation."
+    },
+
+    /* ---- NEUROSCIENCE & ENDOCRINOLOGY (15) ---- */
+    {
+        system: "Neuroscience",
+        stem: "What is the molecular basis of long-term potentiation (LTP) and its role in memory formation?",
+        options: ["LTP involves permanent insertion of new AMPA receptors into synapses driven by CREB-mediated gene transcription, with NMDA receptor activation merely providing the initial calcium signal that is not itself required for maintenance", "LTP is initiated by NMDA receptor activation (requiring simultaneous pre- and postsynaptic activity — Hebb's rule), causing Ca2+ influx activating CaMKII, which phosphorylates and inserts AMPA receptors; late LTP requires CREB-mediated protein synthesis for structural synaptic changes underlying long-term memory", "LTP is mediated exclusively by increased presynaptic neurotransmitter release with no postsynaptic structural or functional changes occurring during the induction or maintenance phases", "LTP requires the prior removal of existing AMPA receptors (LTD) before new NMDA-receptor-triggered insertion can occur, meaning LTP is always preceded by a transient period of reduced synaptic efficacy"],
+        k: 0,
+        rationale: "NMDA receptors are the Hebbian coincidence detector (voltage-dependent Mg2+ block removed by depolarisation). Ca2+ influx → CaMKII autophosphorylation (enabling sustained kinase activity) → AMPA receptor phosphorylation and exocytosis. Late LTP: BDNF-TrkB signalling, PKA, and CREB drive dendritic spine enlargement and new synapse formation."
+    },
+    {
+        system: "Neuroscience",
+        stem: "What is the hypothalamic-pituitary-adrenal (HPA) axis and how does chronic stress alter its function?",
+        options: ["CRH from hypothalamus → ACTH from anterior pituitary → cortisol from adrenal cortex; cortisol provides negative feedback to hypothalamus and pituitary; chronic stress causes glucocorticoid receptor downregulation in feedback centres, impairing negative feedback and sustaining elevated cortisol with consequences for immune function, metabolism, neuroplasticity, and mental health", "The HPA axis exclusively regulates inflammatory responses; its primary role in stress is to stimulate pro-inflammatory cytokine production to combat infection risk during stressful periods", "Chronic stress permanently upregulates HPA axis sensitivity through epigenetic silencing of the CRH promoter, paradoxically reducing cortisol output in the chronic stress state", "The HPA axis operates independently of the hypothalamus in chronic stress, with the pituitary directly sensing plasma cortisol and producing ACTH autonomously without hypothalamic CRH input"],
+        k: 3,
+        rationale: "Chronic stress reduces hippocampal glucocorticoid receptor density (epigenetic mechanisms including FKBP5, NR3C1 methylation), impairing feedback. Sustained hypercortisolaemia causes hippocampal neuronal atrophy (reducing memory/mood regulation), immunosuppression, metabolic syndrome, and increased psychiatric disorder risk. Adverse childhood experiences can epigenetically programme HPA dysregulation."
+    },
+    {
+        system: "Neuroscience",
+        stem: "What is the molecular mechanism of general anaesthesia at the neuronal level?",
+        options: ["General anaesthetics block all voltage-gated sodium channels throughout the CNS, completely abolishing action potential propagation in both sensory and motor pathways simultaneously", "The mechanisms vary by agent but commonly include potentiation of inhibitory GABA-A receptor activity, inhibition of excitatory NMDA receptors, and modulation of two-pore domain potassium channels — collectively reducing thalamocortical and corticothalamic connectivity", "Inhalational anaesthetics dissolve in neuronal lipid bilayers causing generalised membrane fluidisation that non-specifically reduces the function of all membrane proteins equally", "General anaesthetics specifically target and inactivate the reticular activating system through selective high-affinity binding to adenosine A1 receptors on RAS projection neurons"],
+        k: 0,
+        rationale: "Propofol and barbiturates are primarily positive GABA-A allosteric modulators. Ketamine is primarily an NMDA receptor antagonist. Volatile agents (sevoflurane) have multiple targets. The corticothalamic feedback loop disruption hypothesis best explains loss of consciousness — network connectivity collapse rather than synaptic silencing."
+    },
+    {
+        system: "Neuroscience",
+        stem: "What is the molecular pathology of Alzheimer's disease?",
+        options: ["Alzheimer's is caused by prion protein misfolding spreading from cell to cell, distinct from amyloid and tau pathology, which are secondary epiphenomena without mechanistic roles", "Alzheimer's involves extracellular deposition of amyloid-β (cleaved from APP by β- and γ-secretases) forming senile plaques, and intracellular accumulation of hyperphosphorylated tau forming neurofibrillary tangles — both driving neuroinflammation, synaptic dysfunction, and neuronal loss", "Alzheimer's pathology begins with neuroinflammation driven by TREM2 loss-of-function mutations in microglia, with amyloid and tau being inflammatory products rather than primary pathological drivers", "The primary molecular event in Alzheimer's is mitochondrial dysfunction causing ATP depletion in hippocampal neurons, with amyloid and tau accumulation being compensatory responses to energy failure"],
+        k: 0,
+        rationale: "The amyloid cascade hypothesis: APP → Aβ42 (β-secretase/BACE1 + γ-secretase/presenilin) → oligomers → plaques → tau hyperphosphorylation → NFTs. APOE4 is the major genetic risk factor, impairing Aβ clearance. Anti-amyloid antibodies (lecanemab, donanemab) are the first approved disease-modifying treatments targeting this cascade."
+    },
+    {
+        system: "Neuroscience",
+        stem: "What is the molecular basis of action of selective serotonin reuptake inhibitors (SSRIs) and their proposed mechanism in treating depression?",
+        options: ["SSRIs immediately increase serotonin in the synapse by blocking SERT; however, the delayed clinical effect (2-4 weeks) reflects downstream neuroplastic changes including BDNF upregulation, hippocampal neurogenesis, and desensitisation of inhibitory 5-HT1A autoreceptors that initially dampen the net effect of SERT blockade", "SSRIs have immediate clinical effects because the immediate synaptic serotonin increase is itself the therapeutic mechanism — the 2-4 week delay is an artefact of gradual drug distribution to all CNS synapses", "SSRIs work by blocking serotonin synthesis in the presynaptic neuron, reducing excessive serotonergic signalling that characterises the depressed state according to the serotonin excess hypothesis of depression", "SSRIs achieve their antidepressant effect by permanently downregulating serotonin transporter gene expression rather than acutely blocking the transporter protein itself"],
+        k: 3,
+        rationale: "The lag between SERT blockade and clinical response reveals the complexity of depression neurobiology. Autoreceptor desensitisation, BDNF/TrkB signalling, adult hippocampal neurogenesis, and downstream transcriptional changes (CREB, PGC-1α) are all implicated in delayed therapeutic effects. The 'chemical imbalance' narrative significantly oversimplifies the actual pharmacology."
+    },
+    {
+        system: "Neuroscience",
+        stem: "What is the glymphatic system and what is its physiological significance?",
+        options: ["The glymphatic system is the brain's dedicated lymphatic vessel network running alongside cerebral arteries that drains interstitial proteins directly into cervical lymph nodes", "The glymphatic system is a waste clearance pathway using cerebrospinal fluid flow through para-arterial spaces (Virchow-Robin spaces) driven by astrocytic AQP4 water channels, most active during sleep, clearing metabolic waste including amyloid-β and tau from the brain interstitium", "The glymphatic system provides the primary oxygen and glucose supply to deep white matter regions that are too far from capillaries for diffusion alone", "The glymphatic system refers to the blood-brain barrier's transcytosis mechanism for selectively shuttling large beneficial proteins like BDNF across the endothelium into the brain parenchyma"],
+        k: 0,
+        rationale: "Discovered by Maiken Nedergaard's group (2013), the glymphatic system is most active during non-REM sleep when AQP4 channel polarisation at astrocytic endfeet facilitates CSF-ISF exchange. Sleep deprivation reduces glymphatic clearance and accelerates amyloid accumulation — providing molecular basis for the sleep-dementia link."
+    },
+    {
+        system: "Neuroscience",
+        stem: "What is the molecular mechanism of opioid analgesia and tolerance?",
+        options: ["Opioids bind Toll-like receptors on microglia, reducing neuroinflammation and central sensitisation; tolerance develops through progressive microglial NLRP3 inflammasome desensitisation", "Opioids bind Gi-coupled μ-opioid receptors, reducing cAMP and activating inward K+ currents while reducing Ca2+ currents — hyperpolarising neurons and reducing transmitter release; tolerance involves receptor desensitisation via GRK/β-arrestin, internalisation, and upregulation of adenylyl cyclase", "Opioids irreversibly block NMDA receptors in the dorsal horn, preventing central sensitisation; tolerance develops through de novo NMDA receptor synthesis that replaces blocked receptors within 24-48 hours", "Opioids work exclusively at peripheral nociceptors with no central mechanism; tolerance is explained entirely by opioid metabolism enzyme induction reducing bioavailability"],
+        k: 0,
+        rationale: "μOR → Gi/o → ↓AC → ↓cAMP → ↓PKA → ↑GIRK channel opening → hyperpolarisation + ↓presynaptic Ca2+ → ↓substance P/glutamate release. Tolerance: GRK2 phosphorylates activated μOR → β-arrestin recruitment → desensitisation and internalisation + adenylyl cyclase superactivation. β-arrestin bias is a target for developing analgesics with reduced tolerance and respiratory depression."
+    },
+    {
+        system: "Neuroscience",
+        stem: "What are the molecular mechanisms underlying neuropathic pain?",
+        options: ["Neuropathic pain is caused exclusively by ongoing peripheral tissue damage continuously activating nociceptors; it resolves when tissue healing is complete without any central nervous system contribution", "Neuropathic pain involves peripheral sensitisation (reduced nociceptor thresholds from inflammatory mediators, sodium channel upregulation — particularly Nav1.7/Nav1.8), central sensitisation (NMDA-mediated synaptic potentiation in the dorsal horn), microglial activation releasing pro-nociceptive cytokines, and loss of inhibitory interneuron function", "Neuropathic pain is purely a psychological phenomenon without structural or functional changes in the peripheral or central nervous system that could be identified histologically or electrophysiologically", "Neuropathic pain results exclusively from demyelination of Aβ tactile fibres that then aberrantly contact pain-processing laminae in the dorsal horn without any role for inflammation or central sensitisation"],
+        k: 0,
+        rationale: "Nav1.7 (SCN9A) gain-of-function mutations cause inherited erythromelalgia (extreme pain); loss-of-function causes congenital analgesia — validating it as an analgesic target. Central sensitisation involves wind-up (temporal summation), LTP-like changes in dorsal horn, glial activation, and descending facilitation from the rostral ventromedial medulla."
+    },
+    {
+        system: "Neuroscience",
+        stem: "What is the molecular mechanism by which hypoxia-inducible factor (HIF-1α) responds to cellular oxygen levels?",
+        options: ["HIF-1α protein levels are constitutively high in all cells; hypoxia activates it post-translationally by preventing its nuclear export rather than by affecting its stability or degradation", "Under normoxia, prolyl hydroxylase domains (PHDs) hydroxylate HIF-1α using O2, allowing VHL E3 ubiquitin ligase binding and proteasomal degradation; in hypoxia, PHDs are inactive, HIF-1α accumulates, dimerises with HIF-1β, and transcribes hypoxia-response genes including EPO, VEGF, and glycolytic enzymes", "HIF-1α is a membrane receptor that transduces hypoxic signals via a conformational change in its oxygen-sensing haem domain, activating JAK-STAT signalling without nuclear translocation", "HIF-1α directly senses oxygen through a haemoglobin-like iron-containing domain within the protein itself and is activated by oxygen rather than stabilised by its absence"],
+        k: 0,
+        rationale: "The PHD-VHL-HIF axis is a paradigmatic O2-sensing mechanism (2019 Nobel Prize). PHDs require O2, Fe2+, α-ketoglutarate, and ascorbate as cofactors. HIF-1α targets include EPO (erythropoiesis), VEGF (angiogenesis), LDHA and GLUT1 (glycolysis) — a coordinated adaptation to hypoxia. PHD inhibitors are approved for renal anaemia treatment."
+    },
+    {
+        system: "Neuroscience",
+        stem: "What is the molecular basis of type 1 diabetes mellitus (T1DM) and why does it cause diabetic ketoacidosis (DKA)?",
+        options: ["T1DM results from insulin receptor autoantibodies reducing insulin sensitivity; DKA occurs because reduced glucose uptake causes compensatory activation of hepatic ketogenesis through the same mechanism as starvation", "T1DM is an autoimmune disease where T cells and autoantibodies destroy pancreatic β-cells (targeting GAD65, IA-2, insulin, ZnT8), causing absolute insulin deficiency; without insulin, glucagon dominates — activating hepatic glycogenolysis, gluconeogenesis, and unrestrained β-oxidation with ketone body production (acetoacetate, β-hydroxybutyrate) causing metabolic acidosis", "T1DM results from KATP channel gain-of-function mutations preventing glucose-stimulated insulin secretion without any autoimmune component or β-cell destruction", "DKA in T1DM is caused primarily by renal dysfunction failing to excrete ketone acids rather than by increased ketone production, explaining why it occurs only in patients with concurrent renal impairment"],
+        k: 0,
+        rationale: "Absolute insulin deficiency removes all anabolic restraint: catabolic hormones (glucagon, cortisol, catecholamines) dominate → glycogenolysis + gluconeogenesis (hyperglycaemia → osmotic diuresis → dehydration) + lipolysis → free fatty acids → hepatic β-oxidation → acetyl-CoA → ketogenesis. Both metabolic acidosis and dehydration are life-threatening without prompt insulin and fluid resuscitation."
+    },
+    {
+        system: "Neuroscience",
+        stem: "What is the molecular mechanism of thyroid hormone synthesis and how do antithyroid drugs interfere with it?",
+        options: ["Thyroid hormones are synthesised from cholesterol through a series of P450 hydroxylation steps; antithyroid drugs competitively inhibit TSH receptor binding, preventing thyroid gland stimulation", "TSH stimulates thyroid follicular cells to take up iodide via NIS, which is oxidised by TPO and incorporated into thyroglobulin tyrosine residues (organification), forming MIT and DIT that are coupled to T3 and T4; thionamides (propylthiouracil, carbimazole) inhibit TPO, blocking organification and coupling, thereby reducing T3/T4 synthesis", "Thyroid hormones are synthesised entirely within lysosomes by proteolytic cleavage of a unique thyroid-specific albumin; antithyroid drugs block lysosomal acidification preventing this cleavage", "T3 and T4 are synthesised by direct covalent iodination of serum tyrosine transported into follicular cells; antithyroid drugs competitively inhibit the iodine transporter NIS rather than TPO"],
+        k: 0,
+        rationale: "TPO (thyroid peroxidase) catalyses both oxidation of iodide to iodine and the iodination of thyroglobulin tyrosines. PTU additionally inhibits peripheral T4→T3 conversion by deiodinase. Radioiodine (131I) destroys follicular cells by β-emission. Thyroglobulin retrieval via endocytosis and lysosomal proteolysis releases T3/T4 into blood."
+    },
+    {
+        system: "Neuroscience",
+        stem: "What is the molecular mechanism by which leptin regulates energy homeostasis?",
+        options: ["Leptin is secreted by the stomach proportional to meal size and binds hypothalamic receptors to terminate individual meal episodes through short-term satiety signalling", "Leptin is secreted by white adipose tissue proportional to fat mass and acts on hypothalamic arcuate nucleus neurons: activating anorexigenic POMC/CART neurons (increasing α-MSH reducing appetite) and inhibiting orexigenic AgRP/NPY neurons, reducing food intake and increasing energy expenditure via sympathetic activation of brown adipose tissue", "Leptin acts exclusively on the liver to suppress hepatic glucose output and fatty acid synthesis, with its appetite-regulatory effects being secondary consequences of normalising metabolic fuel availability", "Leptin resistance in obesity develops because adipose tissue secretes progressively less leptin as fat mass increases, creating a deficiency state that drives hyperphagia and further weight gain"],
+        k: 0,
+        rationale: "LepRb (long form) in the arcuate nucleus signals via JAK2-STAT3. Common obesity involves leptin resistance (normal or high leptin but impaired signalling) — caused by endoplasmic reticulum stress, SOCS3 upregulation, impaired leptin transport across the BBB. MC4R downstream of POMC is the most common single-gene cause of human obesity."
+    },
+    {
+        system: "Neuroscience",
+        stem: "What is the molecular mechanism of glucocorticoid action and why do exogenous steroids cause so many systemic side effects?",
+        options: ["Glucocorticoids act exclusively through membrane receptors using rapid non-genomic signalling; their numerous side effects result from these rapid signalling cascades in virtually every tissue within minutes of administration", "Glucocorticoids diffuse into cells and bind cytoplasmic glucocorticoid receptors (GR), causing dissociation from HSP90 and nuclear translocation; GR binds GREs activating anti-inflammatory gene transcription and transrepresses AP-1/NF-κB — explaining immunosuppression; the same ubiquitous GR expression in bone, muscle, adipose, CNS, and metabolic tissues explains the extensive side-effect profile", "Glucocorticoids are prodrugs activated exclusively in the liver; side effects result from toxic hepatic metabolites rather than direct GR-mediated effects in peripheral tissues", "Exogenous glucocorticoids work by mimicking cortisol's permissive effects on catecholamine action without any direct transcriptional mechanisms, explaining their rapid onset but not their delayed side effects"],
+        k: 0,
+        rationale: "GR is expressed in virtually every cell. Therapeutic transrepression of NF-κB and AP-1 requires dissociation from its co-repressors — this is the basis for 'dissociated' steroid development aiming to separate anti-inflammatory transrepression from metabolic transactivation side effects (osteoporosis, hyperglycaemia, muscle wasting, adrenal suppression, psychiatric effects)."
+    },
+    {
+        system: "Neuroscience",
+        stem: "What is the molecular basis of G-protein coupled receptor (GPCR) signal amplification and termination?",
+        options: ["One activated GPCR → one activated G-protein → one effector activation → one second messenger molecule — signal is not amplified but simply transduced; termination occurs through receptor endocytosis", "One activated GPCR can activate many G-proteins (amplification 1); each Gαs activates adenylyl cyclase producing many cAMP molecules (amplification 2); each cAMP activates PKA phosphorylating many substrates (amplification 3); termination involves GRK phosphorylation of active GPCR → β-arrestin recruitment → desensitisation, internalisation, and ubiquitination", "GPCRs have intrinsic GTPase activity that self-terminates signalling within milliseconds; the β-arrestin system provides secondary amplification rather than desensitisation", "GPCR signalling is a simple binary on/off switch with no cascade amplification; the diversity of cellular responses reflects differential G-protein expression rather than signal amplification"],
+        k: 0,
+        rationale: "This cascade amplification is fundamental to hormonal pharmacology. The GTPase activity of Gα (slow intrinsic rate accelerated by RGS proteins) terminates Gα signalling. GRK1-7 phosphorylate activated GPCRs; β-arrestin not only desensitises but scaffolds its own signalling complexes — biased agonism exploits this to achieve G-protein signalling without β-arrestin-mediated side effects."
+    },
+],
 };
 
 // (App launcher / event bindings come in the final part, after the question bank is complete)
