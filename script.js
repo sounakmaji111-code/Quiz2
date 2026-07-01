@@ -1800,6 +1800,23 @@ const QUESTION_BANK = {
 ],
 };
 
-// (App launcher / event bindings come in the final part, after the question bank is complete)
+/* ==========================================================================
+   7. APP LAUNCHER & DOM BINDINGS
+   ========================================================================== */
+DOM.controls.initBtn.addEventListener('click', initializeAssessment);
+DOM.controls.submitBtn.addEventListener('click', submitAnswer);
+DOM.controls.nextBtn.addEventListener('click', advanceItem);
+DOM.controls.finalizeBtn.addEventListener('click', concludeExamination);
+DOM.controls.restartBtn.addEventListener('click', () => switchView(DOM.views.welcome));
+
+// FLOATING BACK BUTTON BINDING:
+// Currently bound to return to the welcome dashboard during sandbox testing.
+// Downstream platform integration: update line below to window.location.href = '../index.html'
+DOM.controls.globalBack.addEventListener('click', () => {
+    stopTimer();
+    switchView(DOM.views.welcome);
+});
+
+window.addEventListener('beforeunload', () => clearInterval(AppState.timer));
 
 })();
